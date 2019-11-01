@@ -1,4 +1,11 @@
 /*MAIN STYLES*/
+// $primary-font: #1E1713;
+// $primary-blue: #1A315C; 
+// $accent-blue: #0CADC0;
+// $primary-bg: #CCEDFB;
+// $footer-bg: #161515;
+// $secondary-bg: #20404f; /*color not included in specs, color picked it from the sample pictures*/
+// $primary-white: #FFFFFF;
 
 html{
     font-size: 62.5%; /*10 pixels*/
@@ -9,6 +16,7 @@ body{
     font-size: 2rem;
     line-height: 28px;
     letter-spacing: 2px;
+    color: $primary-font;
 }
 
 .logo{
@@ -16,4 +24,12 @@ body{
     font-size: 3rem;
     line-height: 24px;
     letter-spacing: 1.7px;
+    color: $primary-font;
+}
+
+h1{
+    font-family: $pacifico;
+    font-size: 5.8rem;
+    line-height: 68px;
+    color: $primary-blue;
 }

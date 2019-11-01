@@ -1,3 +1,4 @@
+/*color not included in specs, color picked it from the sample pictures*/
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
 }
@@ -190,6 +191,7 @@ body {
   font-size: 2rem;
   line-height: 28px;
   letter-spacing: 2px;
+  color: #1E1713;
 }
 
 .logo {
@@ -197,6 +199,14 @@ body {
   font-size: 3rem;
   line-height: 24px;
   letter-spacing: 1.7px;
+  color: #1E1713;
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 5.8rem;
+  line-height: 68px;
+  color: #1A315C;
 }
 
 /*
