@@ -6,6 +6,7 @@ Recreated a multi-page pdf design into a responsive website!
 
 * [vscode](https://code.visualstudio.com/) 
 * my big brain :)
+* [sass](https://sass-lang.com/)
 
 
 ## Versioning
