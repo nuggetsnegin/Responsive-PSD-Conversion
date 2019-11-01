@@ -18,7 +18,7 @@ body{
     letter-spacing: 2px;
 }
 
-.logo{
+.logo{ /*logo a div instead of h1 because sr can read title 🐻*/
     font-family: $pacifico;
     font-size: 3rem;
     line-height: 24px;
