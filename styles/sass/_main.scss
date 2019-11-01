@@ -16,14 +16,14 @@ body{
     font-size: 2rem;
     line-height: 28px;
     letter-spacing: 2px;
+    background-color: $primary-bg;
 }
 
-.logo{ /*logo a div instead of h1 because sr can read title 🐻*/
-    font-family: $pacifico;
-    font-size: 3rem;
-    line-height: 24px;
-    letter-spacing: 1.7px;
-    color: $primary-font;
+.wrapper{
+    margin: 0 auto;
+    width: 85%;
+    max-width: 1600px;
+    border: 3px solid pink;
 }
 
 h1{
@@ -31,6 +31,7 @@ h1{
     font-size: 5.8rem;
     line-height: 68px;
     color: $primary-blue;
+    margin-left: 10%;
 }
 
 h2{
@@ -71,30 +72,171 @@ button{
     color: $primary-white;
 }
 
-/*NAVIGATION*/
-
-nav{
-    font-family: $lato;
-    font-weight: 700;
-    text-transform: uppercase;
-
-    line-height: 29px;
-    letter-spacing: 1.4px;
-    color: $primary-blue;
+img{
+    max-width: 100%;
+    display: block; /*bye bye 👻 space*/
 }
 
-ul li{
-    list-style: none;
-
-    a{
-        text-decoration: none;
-        color: $primary-blue;
+.box-border-left{
+    box-shadow: -15px 15px 0px 0px #0CADC0;
     }
-    a:hover{
-        border-bottom: 2px solid $accent-blue;
+    
+.box-border-right{
+    box-shadow: 15px 15px 0px 0px #0CADC0;
+}
 
-    }
-    .active{
-        border-bottom: 2px solid $accent-blue;
+/*MAIN CONTENT*/
+main{
+    background-color: $primary-bg;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "a a b";
+    gap: 10%;
+    padding: 50px 0px;
+}
+
+.main-image{
+    grid-area: b;
+    padding: 100px 0;
+}
+
+.main-content{
+    grid-area: a;
+    padding: 100px 0;
+}
+
+/*GALLERY*/
+.image-gallery{
+    background-color: $secondary-bg;
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+}
+
+/*INFORMATION*/
+
+.information{
+    background-color: $primary-bg;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "a b"
+    "c d";
+    gap: 10%;
+    margin: 100px;
+    h2{
+        margin: 0;
     }
 }
+
+.information h2{
+    margin-bottom: 0;
+}
+
+.upcoming-events{
+    grid-area: a;
+}
+
+.community{
+    grid-area: b;
+}
+
+.blog{
+    grid-area: c;
+}
+
+.get-in-touch{
+    grid-area: d;
+}
+
+/*ref for circle solution:
+https://markheath.net/post/font-awesome-circle-background
+*/
+.icon-background{
+    color: $accent-blue;
+}
+
+i{
+    color: $primary-white;
+}
+
+
+/*MARKET LOCATION*/
+.market-locations{
+    background-color: $secondary-bg;
+    padding: 100px 0;
+    grid-gap: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "a b"
+    "c d";
+    p{
+        color: $primary-white;
+    }
+    h3{
+        margin: 0;
+    }
+}
+
+.online-content{
+    grid-area: b;
+}
+
+.locations-content{
+    grid-area: c;
+}
+
+.left-image{
+    grid-area: a;
+}
+
+.right-image{
+    grid-area: d;
+}
+
+
+/*STYLE SECTION*/
+.style{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "a"
+    "b";
+    text-align: center;
+    h2{
+        margin: 0;
+    }
+    p{
+        margin: 0;
+    }
+}
+
+.style-content{
+    grid-area: b;
+    margin: 100px;
+}
+
+.banner{
+    grid-area: a;
+}
+
+/*BLOG ARTICLE*/
+
+article, aside{
+    background-color: $secondary-bg;
+    color: $primary-white;
+    h2{
+        color: $primary-white;
+    }
+}
+
+.article-aside{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.
+
+

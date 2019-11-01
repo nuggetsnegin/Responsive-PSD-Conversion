@@ -1,0 +1,9 @@
+footer{
+    background: $footer-bg;
+    text-align: center;
+    color: $primary-white;
+    padding: 5px 0px;
+    p{
+        margin: 0; /*remove 👻 space*/
+    }
+}

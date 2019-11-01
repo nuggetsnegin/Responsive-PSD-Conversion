@@ -14,26 +14,24 @@
 </head>
 
 <body>
-    <header>
-        <div class="nav-bar">
-            <div class="logo"><a href="#">textilee</a></div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#home" class="active">home</a>
-                    </li>
-                    <li>
-                        <a href="#about">about</a>
-                    </li>
-                    <li>
-                        <a href="#blog">blog</a>
-                    </li>
-                    <li>
-                        <a href="#contact">contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+    <header class="hero">
+        <nav>
+            <div class="logo"><a href="#">Textilee</div>
+            <ul class="nav-links">
+                <li>
+                    <a href="#home" class="active">home</a>
+                </li>
+                <li>
+                    <a href="#about">about</a>
+                </li>
+                <li>
+                    <a href="#blog">blog</a>
+                </li>
+                <li>
+                    <a href="#contact">contact</a>
+                </li>
+            </ul>
+        </nav>
 
         <div class="hero">
             <h1>Textiles for all projects in mind</h1>
@@ -44,17 +42,20 @@
         </div>
     </header>
 
-    <main>
+    <main class="wrapper">
         <div class="main-image">
-            <img src="assets/small-box.jpg"
+            <img src="assets/small-box.jpg" class="box-border-left"
                 alt="person threading a needle with pink fabric and scissors laying on their table">
         </div>
-        <h2>Learn new techniques</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quibusdam est reprehenderit aspernatur voluptate
-            tenetur laudantium provident, dolore laborum maiores quas repudiandae necessitatibus facilis vel, iste
-            adipisci corporis asperiores dolorem. Soluta enim officia delectus quidem eveniet saepe vero iste nobis
-            labore. Minima quae vero facere!</p>
-        <button class="find-out-button">find out more</button>
+        <div class="main-content">
+            <h2>Learn new techniques</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quibusdam est reprehenderit aspernatur
+                voluptate
+                tenetur laudantium provident, dolore laborum maiores quas repudiandae necessitatibus facilis vel, iste
+                adipisci corporis asperiores dolorem. Soluta enim officia delectus quidem eveniet saepe vero iste nobis
+                labore. Minima quae vero facere!</p>
+            <button class="find-out-button">find out more</button>
+        </div>
     </main>
 
     <div class="image-gallery">
@@ -64,54 +65,77 @@
         <img src="assets/gallery-image-3.jpg" alt="collection of different ribbon patterns organized into cubby cubes">
     </div>
 
-    <section class="information">
+    <section class="information wrapper">
         <div class="upcoming-events">
+            <span class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                <i class="fas fa-calendar-check fa-stack-1x"></i>
+            </span>
             <h2>Upcoming Events</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum similique at autem explicabo quisquam
                 accusamus, alias nemo! Optio error mollitia eius doloremque dicta vel soluta?</p>
         </div>
 
         <div class="community">
-            <h2>Community</h2>
+            <div class="icon-wrapper"><span class="fa-stack fa-2x">
+            <i class="fa fa-circle fa-stack-2x icon-background"></i>
+            <i class="fas fa-users fa-stack-1x"></i>
+            </span>
+            <h2>Community</h2></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit in quod porro maxime voluptatibus!
                 Illum voluptatum expedita voluptates quod maiores aliquid, a cupiditate repellendus molestiae?</p>
         </div>
 
         <div class="blog">
-            <h2>Blog</h2>
+            <div class="icon-wrapper"><span class="fa-stack fa-2x">
+            <i class="fa fa-circle fa-stack-2x icon-background"></i>
+            <i class="fas fa-file fa-stack-1x"></i>
+            </span>
+            <h2>Blog</h2></div>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit quas nulla placeat corporis voluptatibus
                 aut laborum. Ipsa maiores illo beatae quis ea architecto totam ut!</p>
         </div>
 
         <div class="get-in-touch">
-            <h2>Get in Touch</h2>
+            <div class="icon-wrapper"><span class="fa-stack fa-2x">
+            <i class="fa fa-circle fa-stack-2x icon-background"></i>
+            <i class="fas fa-phone fa-stack-1x"></i>
+            </span>
+            <h2>Get in Touch</h2></div>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit magni fugit, consequuntur sequi
                 doloremque debitis sapiente, impedit magnam reprehenderit culpa esse maiores ab optio. Assumenda!</p>
         </div>
     </section>
 
     <section class="market-locations">
-        <div class="online-market">
-            <div class="left-image">
-                <img src="assets/left-image.jpg" alt="pink satin fabric">
-            </div>
+
+        <div class="left-image">
+            <img src="assets/left-image.jpg" alt="pink satin fabric" class="box-border-right">
+        </div>
+        <div class="online-content wrapper">
             <h3>Discover our online market</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae rerum sint est in necessitatibus
-                temporibus! Unde officia error quas dolores mollitia magni, neque maiores quo minus vero? Laborum aut ab
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae rerum sint est in
+                necessitatibus
+                temporibus! Unde officia error quas dolores mollitia magni, neque maiores quo minus vero? Laborum
+                aut ab
                 dolore laudantium animi fugit tempore.</p>
             <button class="read-more-button">read more</button>
         </div>
 
-        <div class="new-locations">
-            <div class="right-image">
-                <img src="assets/right-image.jpg" alt="person measuring fabric">
-            </div>
+
+
+        <div class="right-image">
+            <img src="assets/right-image.jpg" alt="person measuring fabric" class="box-border-left">
+        </div>
+        <div class="locations-content wrapper">
             <h3>New locations</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nihil repudiandae corporis velit dolor
-                aliquam cumque sed a suscipit eaque, explicabo odit cum corrupti laborum commodi quos obcaecati iusto
+                aliquam cumque sed a suscipit eaque, explicabo odit cum corrupti laborum commodi quos obcaecati
+                iusto
                 expedita iste sequi minus blanditiis. Repudiandae?</p>
             <button class="read-more-button">read more</button>
         </div>
+
     </section>
 
     <section class="style">
@@ -119,7 +143,7 @@
             <img src="assets/banner.jpg" alt="vibrantly colored bundles of shoe laces">
         </div>
 
-        <div class="style-content">
+        <div class="style-content wrapper">
             <h2>Search by style</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit fugiat id illo voluptas ut error optio
                 nostrum odit omnis, cupiditate blanditiis nam quas, esse libero sapiente vel. Voluptate quas repellat ad
