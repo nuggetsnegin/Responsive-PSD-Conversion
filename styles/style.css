@@ -1,4 +1,5 @@
 /*color not included in specs, color picked it from the sample pictures*/
+/*color not included in specs, color picked it from sample*/
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
 }
@@ -191,7 +192,6 @@ body {
   font-size: 2rem;
   line-height: 28px;
   letter-spacing: 2px;
-  color: #1E1713;
 }
 
 .logo {
@@ -207,6 +207,62 @@ h1 {
   font-size: 5.8rem;
   line-height: 68px;
   color: #1A315C;
+}
+
+h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 4.3rem;
+  line-height: 58px;
+  letter-spacing: 2.7px;
+  color: #1A315C;
+}
+
+h3 {
+  font-family: "Pacifico", cursive;
+  font-size: 4rem;
+  line-height: 58px;
+  letter-spacing: 2.5px;
+  color: #FFFFFF;
+}
+
+button {
+  font-family: "Pacifico", cursive;
+  font-size: 2.7rem;
+  text-align: center;
+  letter-spacing: 1.4px;
+  line-height: 32px;
+  border: 0;
+  padding: 10px 30px;
+}
+
+.read-more-button {
+  font-family: "Pacifico", cursive;
+  background-color: #c6d9fa;
+  color: #1E1713;
+}
+
+.find-out-button {
+  font-family: "Pacifico", cursive;
+  background-color: #1A315C;
+  color: #FFFFFF;
+}
+
+/*NAVIGATION*/
+nav {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 29px;
+  letter-spacing: 1.4px;
+  color: #1A315C;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
 }
 
 /*
