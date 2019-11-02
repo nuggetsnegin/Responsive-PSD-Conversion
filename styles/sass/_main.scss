@@ -270,10 +270,9 @@ article{
     img{
         position: relative;
         z-index: 1;
-        margin-top: -100px;
+        margin-top: -10%;
     }
 }
-
 
 aside{
     grid-area: b;
@@ -289,6 +288,8 @@ aside{
 .comment-section{
     grid-area: c;
 }
+
+
 
 /*CONTACT SECTION*/
 

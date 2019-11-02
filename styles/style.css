@@ -498,7 +498,7 @@ article {
 article img {
   position: relative;
   z-index: 1;
-  margin-top: -100px;
+  margin-top: -10%;
 }
 
 aside {
@@ -650,8 +650,9 @@ header {
   margin-top: 5%;
 }
 
-fieldset {
-  border: 0;
+/*CONTACT FORM*/
+.main-form fieldset {
+  border: none;
   background-color: #20404f;
   padding: 200px 300px;
 }
@@ -674,6 +675,12 @@ fieldset {
 
 .aside-contact {
   grid: b;
+}
+
+/*COMMENT FORM*/
+.comment-section fieldset {
+  border: none;
+  background-color: none;
 }
 
 footer {

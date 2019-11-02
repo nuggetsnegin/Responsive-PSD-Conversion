@@ -1,5 +1,7 @@
-fieldset{
-    border: 0;
+/*CONTACT FORM*/
+
+.main-form fieldset{
+    border: none;
     background-color: $secondary-bg;
     padding: 200px 300px;
 }
@@ -21,4 +23,10 @@ fieldset{
 
 .aside-contact{
     grid: b;
+}
+
+/*COMMENT FORM*/
+.comment-section fieldset{
+    border: none;
+    background-color: none;
 }
