@@ -606,6 +606,14 @@ header {
   padding-top: 150px;
 }
 
+/*CONTACT HEADER*/
+.contact-hero {
+  background: url(../assets/contact-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+}
+
 footer {
   background: #161515;
   text-align: center;

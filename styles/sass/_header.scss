@@ -82,3 +82,12 @@ header{
 .blog-hero h1{
     padding-top: 150px;
 }
+
+/*CONTACT HEADER*/
+
+.contact-hero{
+    background: url(../assets/contact-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+}
