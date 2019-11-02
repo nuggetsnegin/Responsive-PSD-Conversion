@@ -1,0 +1,24 @@
+fieldset{
+    border: 0;
+    background-color: $secondary-bg;
+    padding: 200px 300px;
+}
+
+.grid-wrap{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "a a b";
+}
+
+.main-form{
+    grid: a;
+    position: relative;
+    margin-top: -15%;
+    background: none;
+    margin-left: 5%;
+}
+
+.aside-contact{
+    grid: b;
+}

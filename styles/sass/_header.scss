@@ -48,7 +48,7 @@ ul li{
     }
 }
 
-/*HEADER & HERO*/
+/*MAIN HEADER & HERO*/
 header{
     background: $primary-white;
 }
@@ -57,6 +57,7 @@ header{
     background: url(../assets/header-home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     min-height: 90vh;
 }
 
@@ -65,10 +66,9 @@ header{
 }
 
 .hero-img{
-    position: absolute;
+    position: relative;
     z-index: 1;
-    margin-top: 20px;
-    width: 100%;
+    margin-top: -30%;
 }
 
 /*BLOG HEADER & HERO*/
@@ -76,11 +76,12 @@ header{
     background: url(../assets/blog-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     min-height: 90vh;
 }
 
 .blog-hero h1{
-    padding-top: 150px;
+    margin-top: 5%;
 }
 
 /*CONTACT HEADER*/
@@ -89,5 +90,10 @@ header{
     background: url(../assets/contact-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     min-height: 90vh;
+}
+
+.contact-hero h1{
+    margin-top: 5%;
 }

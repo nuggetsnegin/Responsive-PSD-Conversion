@@ -240,12 +240,24 @@ button {
   font-family: "Pacifico", cursive;
   background-color: #c6d9fa;
   color: #1E1713;
+  margin-top: 2%;
+}
+
+.read-more-button:hover {
+  background-color: #1E1713;
+  color: #c6d9fa;
 }
 
 .find-out-button {
   font-family: "Pacifico", cursive;
   background-color: #1A315C;
   color: #FFFFFF;
+  margin-top: 2%;
+}
+
+.find-out-button:hover {
+  color: #1A315C;
+  background-color: #FFFFFF;
 }
 
 img {
@@ -273,14 +285,13 @@ main {
       grid-template-columns: repeat(3, 1fr);
       grid-template-areas: "a a b";
   gap: 10%;
-  padding: 50px 0px;
+  padding-bottom: 100px;
 }
 
 .main-image {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: b;
-  padding: 100px 0;
 }
 
 .main-content {
@@ -288,7 +299,6 @@ main {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: a;
-  padding: 100px 0;
 }
 
 /*GALLERY*/
@@ -299,7 +309,8 @@ main {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 60px;
+  padding: 100px;
+  gap: 20px;
 }
 
 /*INFORMATION*/
@@ -310,16 +321,12 @@ main {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas: "a b" "c d";
-  gap: 10%;
+  gap: 50px;
   margin: 100px;
 }
 
 .information h2 {
   margin: 0;
-}
-
-.information h2 {
-  margin-bottom: 0;
 }
 
 .upcoming-events {
@@ -359,11 +366,17 @@ i {
   color: #FFFFFF;
 }
 
+.flex-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /*MARKET LOCATION*/
 .market-locations {
   background-color: #20404f;
-  padding: 100px 0;
-  grid-gap: 10%;
+  gap: 50px;
+  padding: 50px 0px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -393,6 +406,7 @@ i {
   -ms-grid-column-span: 2;
   grid-area: c;
   text-align: right;
+  padding: 0;
 }
 
 .left-image {
@@ -405,7 +419,7 @@ i {
 .left-image img {
   position: relative;
   z-index: 1;
-  margin-top: -120px;
+  margin-top: -100px;
 }
 
 .right-image {
@@ -417,7 +431,7 @@ i {
 .right-image img {
   position: relative;
   z-index: 1;
-  margin-top: 120px;
+  margin-bottom: -100px;
 }
 
 /*STYLE SECTION*/
@@ -432,6 +446,7 @@ i {
 
 .style h2 {
   margin: 0;
+  padding-bottom: 20px;
 }
 
 .style p {
@@ -507,6 +522,21 @@ aside img {
   grid-area: c;
 }
 
+/*CONTACT SECTION*/
+.aside-contact {
+  background: none;
+  color: #1E1713;
+}
+
+.aside-contact i {
+  color: #1A315C;
+}
+
+.aside-contact ul li {
+  display: inline-block;
+  padding: 5px;
+}
+
 /*NAVIGATION*/
 nav {
   display: -webkit-box;
@@ -570,7 +600,7 @@ ul li .active {
   border-bottom: 2px solid #0CADC0;
 }
 
-/*HEADER & HERO*/
+/*MAIN HEADER & HERO*/
 header {
   background: #FFFFFF;
 }
@@ -579,6 +609,7 @@ header {
   background: url(../assets/header-home.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   min-height: 90vh;
 }
 
@@ -588,10 +619,9 @@ header {
 }
 
 .hero-img {
-  position: absolute;
+  position: relative;
   z-index: 1;
-  margin-top: 20px;
-  width: 100%;
+  margin-top: -30%;
 }
 
 /*BLOG HEADER & HERO*/
@@ -599,11 +629,12 @@ header {
   background: url(../assets/blog-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   min-height: 90vh;
 }
 
 .blog-hero h1 {
-  padding-top: 150px;
+  margin-top: 5%;
 }
 
 /*CONTACT HEADER*/
@@ -611,7 +642,38 @@ header {
   background: url(../assets/contact-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   min-height: 90vh;
+}
+
+.contact-hero h1 {
+  margin-top: 5%;
+}
+
+fieldset {
+  border: 0;
+  background-color: #20404f;
+  padding: 200px 300px;
+}
+
+.grid-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "a a b";
+}
+
+.main-form {
+  grid: a;
+  position: relative;
+  margin-top: -15%;
+  background: none;
+  margin-left: 5%;
+}
+
+.aside-contact {
+  grid: b;
 }
 
 footer {
@@ -625,57 +687,3 @@ footer p {
   margin: 0;
   /*remove 👻 space*/
 }
-
-/*
-    font-family: 'Pacifico', cursive;
-
-        Header Heading (Get in.., Blog)
-        Pacifico, Regular, 68px
-        Line height: 64px
-
-        Heading (Textiles for all...)
-        Pacifico, Regular, 58px
-        Line height: 68px
-
-        
-        headings (Learn new.., Upcoming.., Communi.., Blog.., Get in..,
-        Pacifico, Regular, 43px
-        Line height: 58px, Letter spacing: 2.7px
-
-
-        Heading (Comments)
-        Pacifico, Regular, 40px
-        Letter spacing: 4.3px
-
-
-        Headings ( Discover.., New loca...)
-        Pacifico, Regular, 40px
-        Right, Line height: 58px, Letter spacing: 2.5px
-
-
-        Headings (Our missions, Recent Pos..)
-        Pacifico, Regular, 35px
-        Letter spacing: 2.9px
-
-        
-        Logo
-        Pacifico, Regular, 30px
-        Line height: 24px, Letter spacing: 1.7px
-
-
-        buttons
-        Pacifico, Regular, 27px
-        Center, Line height: 32px, Letter spacing: 1.4px
-
-
-        font-family: 'Lato', sans-serif;
-
-        Nav (700 weight)
-        Lato, Bold, 20px
-        Center, Line height: 29px, Letter spacing: 1.4px
-
-        body text
-        Lato, Regular, 20px
-        Line height: 28px, Letter spacing: 2px
-
-*/
