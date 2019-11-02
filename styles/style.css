@@ -200,7 +200,6 @@ body {
   margin: 0 auto;
   width: 85%;
   max-width: 1600px;
-  border: 3px solid pink;
 }
 
 h1 {
@@ -586,7 +585,6 @@ header {
 .hero h1 {
   width: 50%;
   /*break text into two lines*/
-  border: 1px solid red;
 }
 
 .hero-img {
