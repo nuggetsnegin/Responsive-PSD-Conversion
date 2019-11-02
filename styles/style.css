@@ -278,8 +278,8 @@ main {
 }
 
 .main-image {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: b;
   padding: 100px 0;
 }
@@ -287,6 +287,7 @@ main {
 .main-content {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: a;
   padding: 100px 0;
 }
@@ -325,24 +326,26 @@ main {
 .upcoming-events {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: a;
 }
 
 .community {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: b;
 }
 
 .blog {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: c;
 }
 
 .get-in-touch {
   -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-column: 3;
   grid-area: d;
 }
 
@@ -380,26 +383,28 @@ i {
 }
 
 .online-content {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: b;
 }
 
 .locations-content {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: c;
 }
 
 .left-image {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: a;
 }
 
 .right-image {
   -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-column: 3;
   grid-area: d;
 }
 
@@ -422,8 +427,8 @@ i {
 }
 
 .style-content {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: b;
   margin: 100px;
 }
@@ -431,6 +436,7 @@ i {
 .banner {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: a;
 }
 
@@ -444,11 +450,48 @@ article h2, aside h2 {
   color: #FFFFFF;
 }
 
-.article-aside {
+.article-aside-comments {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "a a b" "c c d";
+  grid-gap: 100px;
+}
+
+article {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: a;
+}
+
+article img {
+  position: relative;
+  z-index: 1;
+  margin-top: -100px;
+}
+
+aside {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: b;
+  margin-top: 100px;
+}
+
+aside img {
+  position: relative;
+  z-index: 1;
+  margin-top: -50px;
+}
+
+.comment-section {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: c;
 }
 
 /*NAVIGATION*/

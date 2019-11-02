@@ -232,11 +232,40 @@ article, aside{
     }
 }
 
-.article-aside{
+.article-aside-comments{
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "a a b"
+    "c c d";
+    grid-gap: 100px;
 }
 
-.
+article{
+    grid-area: a;
+
+    img{
+        position: relative;
+        z-index: 1;
+        margin-top: -100px;
+    }
+}
+
+
+aside{
+    grid-area: b;
+    margin-top: 100px;
+    img{
+        position: relative;
+        z-index: 1;
+        margin-top: -50px;
+    }
+}
+
+.comment-section{
+    grid-area: c;
+}
+
 
 
