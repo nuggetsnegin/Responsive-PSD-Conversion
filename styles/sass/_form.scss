@@ -1,32 +1,58 @@
 /*CONTACT FORM*/
-
-.main-form fieldset{
-    border: none;
-    background-color: $secondary-bg;
-    padding: 200px 300px;
-}
-
-.grid-wrap{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-    "a a b";
-}
-
 .main-form{
-    grid: a;
     position: relative;
-    margin-top: -15%;
+    margin-top: -30%;
     background: none;
     margin-left: 5%;
+    grid-area: form;
+    textarea{
+        background: transparent;
+        border: 1px solid $accent-blue;
+        width: 100%;
+    }
+    .read-more-button{
+        width: 100%;
+    }
+    fieldset{
+        border: none;
+        background-color: $secondary-bg;
+        padding: 100px;
+    }
 }
 
-.aside-contact{
-    grid: b;
+.main-form input[type=email],
+.main-form input[type=text]{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid $accent-blue;
+    margin-bottom: 40px;
+}
+
+.main-form ::placeholder{
+    color: $primary-white;
 }
 
 /*COMMENT FORM*/
-.comment-section fieldset{
+.comment-form{
+    textarea{
+        background: transparent;
+        border: 2px solid $accent-blue;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    fieldset{
+        border: none;
+        background-color: transparent;
+    }
+    .find-out-button{
+        width: 100%;
+    }
+}
+
+.comment-form input[type=email],
+.comment-form input[type=text]{
+    background: transparent;
     border: none;
-    background-color: none;
+    border-bottom: 2px solid $accent-blue;
+    margin-bottom: 40px;
 }

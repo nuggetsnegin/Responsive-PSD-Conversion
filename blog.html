@@ -38,7 +38,7 @@
     </header>
 
     <div class="article-aside-comments">
-        <article>
+        <article class="box-border">
             <img src="assets/blog-post-image.jpg" class="box-border-right"
                 alt="light blue and pink fabric stacked ontop of eachother">
             <div class="wrapper"><h2>Our new collection</h2>
@@ -66,11 +66,10 @@
 
         </article>
 
-        <aside>
+        <aside class="blog-aside">
             <img src="assets/sidebar-image.jpg" alt="rolled up light beige fabric stacked ontop of eachother">
             <h2>Our Mission</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, ratione.</p>
-            <p>Find out more.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, ratione. Find out more.</p>
 
             <h2>Recent Posts</h2>
             <ul>
@@ -105,20 +104,19 @@
                 </div>
             </div>
 
-            <form action="">
+            <form action="" class="comment-form wrapper">
                 <fieldset>
-                    <label for="name">Name</label>
+                    <label for="name" class="visuallyHidden">Name</label>
                     <input type="text" type="name" class="name" placeholder="name">
 
-                    <label for="email">Email</label>
+                    <label for="email" class="visuallyHidden">Email</label>
                     <input type="email" type="email" class="email" placeholder="Email address">
 
-                    <label for="comment">Comment</label>
-                    <input type="textarea" type="comment" class="comment" placeholder="Comment">
+                    <label for="comment" class="visuallyHidden">Comment</label>
+                    <textarea name="comment" type="textarea" class="comment" placeholder="Comment" rows="10" cols="10"></textarea>
 
-                    <label for="post-button">post comment</label>
+                    <label for="post-button" class="visuallyHidden">post comment</label>
                     <button type="submit" class="find-out-button">post comment</button>
-                </fieldset>
                 </fieldset>
             </form>
         </div>

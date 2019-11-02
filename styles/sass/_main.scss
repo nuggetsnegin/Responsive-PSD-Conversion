@@ -97,8 +97,12 @@ img{
     box-shadow: 15px 15px 0px 0px #0CADC0;
 }
 
+.box-border{
+    box-shadow: 0px 0px 0px 15px #0CADC0;
+}
+
 /*MAIN CONTENT*/
-main{
+.index-main{
     background-color: $primary-bg;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -257,9 +261,10 @@ article, aside{
 .article-aside-comments{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
     "a a b"
+    "a a d"
     "c c d";
     grid-gap: 100px;
 }
@@ -274,14 +279,26 @@ article{
     }
 }
 
-aside{
+.blog-aside{
     grid-area: b;
     margin-top: 100px;
+    padding: 40px 0px;
     img{
         position: relative;
         z-index: 1;
-        margin-top: -50px;
-        margin-left: 45px;
+        margin-top: -20%;
+        margin-left: 10%;
+    }
+    p{
+        padding: 0px 20px;
+        margin: 0;
+    }
+    h2{
+        margin-bottom: 0;
+        padding: 0px 20px;
+    }
+    ul{
+        margin: 0;
     }
 }
 
@@ -289,22 +306,45 @@ aside{
     grid-area: c;
 }
 
-
-
 /*CONTACT SECTION*/
-
+.grid-wrap{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "form form contact";
+    gap: 50px;
+    padding: 30px 0px;
+}
 
 .aside-contact{
+    grid-area: contact;
+}
+
+.aside-contact{
+    padding: 50px;
     background: none;
     color: $primary-font;
     i{
         color: $primary-blue;
     }
-    ul li{
+    ul{
+        padding: 0;
+    }
+    li{
         display: inline-block;
-        padding: 5px;
+        padding-right: 20px;
     }
 }
+
+.contact-list i:hover{
+        color: $primary-white;
+}
+
+.contact-info{
+    p{
+        margin: 0;
+    }
+}
+
 
 
 
