@@ -114,7 +114,6 @@ main{
 }
 
 /*INFORMATION*/
-
 .information{
     background-color: $primary-bg;
     display: grid;
@@ -186,14 +185,25 @@ i{
 
 .locations-content{
     grid-area: c;
+    text-align: right;
 }
 
 .left-image{
     grid-area: a;
+    img{
+        position: relative;
+        z-index: 1;
+        margin-top: -120px;
+    }
 }
 
 .right-image{
     grid-area: d;
+    img{
+        position: relative;
+        z-index: 1;
+        margin-top: 120px;
+    }
 }
 
 
@@ -260,6 +270,7 @@ aside{
         position: relative;
         z-index: 1;
         margin-top: -50px;
+        margin-left: 45px;
     }
 }
 
