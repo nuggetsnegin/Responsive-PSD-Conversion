@@ -335,12 +335,25 @@ img {
   margin: 0;
 }
 
+.information p {
+  margin-left: 22%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .upcoming-events {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: a;
+}
+
+.icon-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
 }
 
 .community {
@@ -372,12 +385,6 @@ https://markheath.net/post/font-awesome-circle-background
 
 i {
   color: #FFFFFF;
-}
-
-.flex-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 /*MARKET LOCATION*/
@@ -501,6 +508,17 @@ article h2, aside h2 {
   grid-gap: 100px;
 }
 
+.article-aside-comments h4 {
+  color: #CCEDFB;
+  margin: 0;
+  margin-bottom: 5%;
+}
+
+.article-aside-comments h2 {
+  margin-top: 10%;
+  margin-bottom: 2%;
+}
+
 article {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
@@ -551,6 +569,54 @@ article img {
   grid-area: c;
 }
 
+.comment-section h2 {
+  color: #1E1713;
+  margin-top: 5%;
+}
+
+.comment-section h4 {
+  color: #1A315C;
+}
+
+.comment-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+  margin: 7% 0 20% 0;
+}
+
+.comment-1 img {
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.comment-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+
+.comment-2 img {
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.comment-2 p {
+  margin: 0;
+}
+
 /*CONTACT SECTION*/
 .grid-wrap {
   display: -ms-grid;
@@ -559,7 +625,7 @@ article img {
       grid-template-columns: repeat(3, 1fr);
       grid-template-areas: "form form contact";
   gap: 50px;
-  padding: 30px 0px;
+  margin: 5% 0;
 }
 
 .aside-contact {
@@ -588,7 +654,7 @@ article img {
 }
 
 .contact-list i:hover {
-  color: #FFFFFF;
+  color: #0CADC0;
 }
 
 .contact-info p {
@@ -762,6 +828,15 @@ header {
   color: #FFFFFF;
 }
 
+.main-form input[type=email] {
+  width: 45%;
+}
+
+.main-form input[type=text] {
+  width: 45%;
+  margin-right: 9%;
+}
+
 /*COMMENT FORM*/
 .comment-form textarea {
   background: transparent;
@@ -795,7 +870,7 @@ header {
 
 .comment-form input[type=text] {
   width: 45%;
-  margin-right: 8%;
+  margin-right: 9%;
 }
 
 footer {

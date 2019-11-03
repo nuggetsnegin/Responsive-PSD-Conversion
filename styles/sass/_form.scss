@@ -34,6 +34,15 @@
     color: $primary-white;
 }
 
+.main-form input[type=email]{
+    width: 45%;
+}
+
+.main-form input[type=text]{
+    width: 45%;
+    margin-right: 9%;
+}
+
 /*COMMENT FORM*/
 .comment-form{
     textarea{
@@ -67,5 +76,5 @@
 
 .comment-form input[type=text]{
     width: 45%;
-    margin-right: 8%;
+    margin-right: 9%;
 }
