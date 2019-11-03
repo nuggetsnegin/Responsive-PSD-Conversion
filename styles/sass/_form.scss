@@ -7,8 +7,9 @@
     grid-area: form;
     textarea{
         background: transparent;
-        border: 1px solid $accent-blue;
+        border: 2px solid $accent-blue;
         width: 100%;
+        padding: 4rem;
     }
     .read-more-button{
         width: 100%;
@@ -26,6 +27,7 @@
     border: none;
     border-bottom: 2px solid $accent-blue;
     margin-bottom: 40px;
+    padding: 2rem;
 }
 
 .main-form ::placeholder{
@@ -38,7 +40,8 @@
         background: transparent;
         border: 2px solid $accent-blue;
         width: 100%;
-        margin-bottom: 20px;
+        margin: 2% 0;
+        padding: 4rem;
     }
     fieldset{
         border: none;
@@ -54,5 +57,15 @@
     background: transparent;
     border: none;
     border-bottom: 2px solid $accent-blue;
-    margin-bottom: 40px;
+    margin: 5% 0;
+    padding: 2rem;
+}
+
+.comment-form input[type=email]{
+    width: 45%;
+}
+
+.comment-form input[type=text]{
+    width: 45%;
+    margin-right: 8%;
 }

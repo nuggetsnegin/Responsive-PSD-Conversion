@@ -493,8 +493,10 @@ article h2, aside h2 {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
+  -ms-grid-rows: (min-content)[3];
+      grid-template-rows: repeat(3, -webkit-min-content);
+      grid-template-rows: repeat(3, min-content);
+  /*stop container from being too long*/
       grid-template-areas: "a a b" "a a d" "c c d";
   grid-gap: 100px;
 }
@@ -677,7 +679,7 @@ header {
 .hero-img {
   position: relative;
   z-index: 1;
-  margin-top: -30%;
+  margin-top: -20%;
 }
 
 /*BLOG HEADER & HERO*/
@@ -720,8 +722,9 @@ header {
 
 .main-form textarea {
   background: transparent;
-  border: 1px solid #0CADC0;
+  border: 2px solid #0CADC0;
   width: 100%;
+  padding: 4rem;
 }
 
 .main-form .read-more-button {
@@ -740,6 +743,7 @@ header {
   border: none;
   border-bottom: 2px solid #0CADC0;
   margin-bottom: 40px;
+  padding: 2rem;
 }
 
 .main-form ::-webkit-input-placeholder {
@@ -763,7 +767,8 @@ header {
   background: transparent;
   border: 2px solid #0CADC0;
   width: 100%;
-  margin-bottom: 20px;
+  margin: 2% 0;
+  padding: 4rem;
 }
 
 .comment-form fieldset {
@@ -780,7 +785,17 @@ header {
   background: transparent;
   border: none;
   border-bottom: 2px solid #0CADC0;
-  margin-bottom: 40px;
+  margin: 5% 0;
+  padding: 2rem;
+}
+
+.comment-form input[type=email] {
+  width: 45%;
+}
+
+.comment-form input[type=text] {
+  width: 45%;
+  margin-right: 8%;
 }
 
 footer {
