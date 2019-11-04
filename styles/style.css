@@ -838,6 +838,26 @@ header {
   padding: 100px;
 }
 
+.main-form ::-webkit-input-placeholder {
+  color: #FFFFFF;
+  opacity: .9;
+}
+
+.main-form :-ms-input-placeholder {
+  color: #FFFFFF;
+  opacity: .9;
+}
+
+.main-form ::-ms-input-placeholder {
+  color: #FFFFFF;
+  opacity: .9;
+}
+
+.main-form ::placeholder {
+  color: #FFFFFF;
+  opacity: .9;
+}
+
 .main-form input[type=email],
 .main-form input[type=text] {
   background: transparent;
@@ -851,26 +871,6 @@ header {
 .main-form input[type=email]:focus,
 .main-form input[type=text]:focus {
   border-bottom: 2px dashed #0CADC0;
-}
-
-::-webkit-input-placeholder {
-  color: #FFFFFF;
-  opacity: .9;
-}
-
-:-ms-input-placeholder {
-  color: #FFFFFF;
-  opacity: .9;
-}
-
-::-ms-input-placeholder {
-  color: #FFFFFF;
-  opacity: .9;
-}
-
-::placeholder {
-  color: #FFFFFF;
-  opacity: .9;
 }
 
 .main-form input[type=email] {
@@ -962,11 +962,15 @@ footer p {
   /*remove 👻 space*/
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1285px) {
   .hero,
   .blog-hero,
   .contact-hero {
     min-height: 70vh;
+  }
+  .hero-img {
+    margin-top: -10%;
+    width: 50%;
   }
   .grid-wrap {
     gap: 5%;
@@ -977,15 +981,10 @@ footer p {
 }
 
 @media (max-width: 1030px) {
-  .hero-img {
-    margin-top: -30%;
-  }
-  .hero {
-    min-height: 60vh;
-  }
+  .hero,
   .contact-hero,
   .blog-hero {
-    min-height: 40vh;
+    min-height: 60vh;
   }
   .information {
     -ms-grid-columns: 1fr;
@@ -1002,8 +1001,8 @@ footer p {
 }
 
 @media (max-width: 950px) {
-  .hero-img {
-    margin-top: -40%;
+  h1 {
+    font-size: 4rem;
   }
   .index-main {
     gap: 5%;
@@ -1090,3 +1089,43 @@ footer p {
     font-size: 1.75rem;
   }
 }
+
+/*stack forms, stack gallery, stack
+learn new techniques
+fix white space on style
+fix h1 on cover*/
+/* 880 px */
+@media (max-width: 885px) {
+  .main-form input[type=email],
+  .main-form input[type=text],
+  .comment-form input[type=text],
+  .comment-form input[type=email] {
+    width: 100%;
+    margin-bottom: 5%;
+    padding: 1.5rem;
+  }
+  .main-form textarea,
+  .comment-form textarea {
+    margin-top: 5%;
+    padding: 1.5rem;
+  }
+  .index-main {
+    gap: 2%;
+  }
+  .image-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2%;
+  }
+  .image-flex img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+/*media query to stack comment & comment box 
+and contact and contact info
+need to find solution for main img*/

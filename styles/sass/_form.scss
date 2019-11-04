@@ -26,6 +26,11 @@
     }
 }
 
+.main-form ::placeholder{
+    color: $primary-white;
+    opacity: .9;
+}
+
 .main-form input[type=email],
 .main-form input[type=text]{
     background: transparent;
@@ -39,10 +44,7 @@
     }
 }
 
-::placeholder{
-    color: $primary-white;
-    opacity: .9;
-}
+
 
 .main-form input[type=email]{
     width: 44%;
