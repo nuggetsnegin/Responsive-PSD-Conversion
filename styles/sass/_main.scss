@@ -126,9 +126,8 @@ img{
 
 .image-flex{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 100px 0px;
-    gap: 100px;
 }
 
 /*INFORMATION*/
@@ -139,7 +138,7 @@ img{
     grid-template-areas:
     "a b"
     "c d";
-    gap: 1fr;
+    gap: 50px;
     padding: 50px 0px;
     h2{
         margin: 0;

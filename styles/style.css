@@ -315,10 +315,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 100px 0px;
-  gap: 100px;
 }
 
 /*INFORMATION*/
@@ -329,7 +329,7 @@ img {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas: "a b" "c d";
-  gap: 1fr;
+  gap: 50px;
   padding: 50px 0px;
 }
 
