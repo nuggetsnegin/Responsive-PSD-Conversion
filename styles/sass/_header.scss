@@ -61,7 +61,9 @@ header{
     min-height: 90vh;
 }
 
-.hero h1{
+.hero h1,
+.blog-hero h1,
+.contact-hero h1{
     width: 100%; 
 }
 
@@ -73,6 +75,7 @@ header{
     position: relative;
     z-index: 1;
     margin-top: -20%;
+    max-width: 80%;
 }
 
 /*BLOG HEADER & HERO*/
