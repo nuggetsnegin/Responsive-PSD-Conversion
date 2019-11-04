@@ -198,8 +198,9 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  width: 85%;
+  width: 90%;
   max-width: 1600px;
+  border: 3px solid pink;
 }
 
 h1 {
@@ -289,7 +290,7 @@ img {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
       grid-template-areas: "a a b";
-  gap: 10%;
+  gap: 200px;
   padding-bottom: 100px;
 }
 
@@ -328,7 +329,7 @@ img {
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas: "a b" "c d";
   gap: 50px;
-  margin: 100px;
+  padding: 50px 0px;
 }
 
 .information h2 {
@@ -336,9 +337,7 @@ img {
 }
 
 .information p {
-  margin-left: 22%;
-  margin-top: 0;
-  margin-bottom: 0;
+  padding: 2px 0px 0px 100px;
 }
 
 .upcoming-events {
@@ -354,6 +353,11 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+}
+
+.fa-stack {
+  font-size: 3rem;
+  /*fix default size, too big*/
 }
 
 .community {
@@ -474,7 +478,7 @@ i {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: b;
-  margin: 100px;
+  margin-top: 5%;
 }
 
 .banner {
@@ -814,18 +818,22 @@ header {
 
 .main-form ::-webkit-input-placeholder {
   color: #FFFFFF;
+  opacity: .9;
 }
 
 .main-form :-ms-input-placeholder {
   color: #FFFFFF;
+  opacity: .9;
 }
 
 .main-form ::-ms-input-placeholder {
   color: #FFFFFF;
+  opacity: .9;
 }
 
 .main-form ::placeholder {
   color: #FFFFFF;
+  opacity: .9;
 }
 
 .main-form input[type=email] {
@@ -853,6 +861,26 @@ header {
 
 .comment-form .find-out-button {
   width: 100%;
+}
+
+.comment-form ::-webkit-input-placeholder {
+  color: #1A315C;
+  opacity: 1;
+}
+
+.comment-form :-ms-input-placeholder {
+  color: #1A315C;
+  opacity: 1;
+}
+
+.comment-form ::-ms-input-placeholder {
+  color: #1A315C;
+  opacity: 1;
+}
+
+.comment-form ::placeholder {
+  color: #1A315C;
+  opacity: 1;
 }
 
 .comment-form input[type=email],
