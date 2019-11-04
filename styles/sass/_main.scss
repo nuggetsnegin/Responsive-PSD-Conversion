@@ -122,10 +122,13 @@ img{
 /*GALLERY*/
 .image-gallery{
     background-color: $secondary-bg;
+}
+
+.image-flex{
     display: flex;
     justify-content: space-around;
-    padding: 100px;
-    gap: 20px;
+    padding: 100px 0px;
+    gap: 100px;
 }
 
 /*INFORMATION*/
@@ -136,7 +139,7 @@ img{
     grid-template-areas:
     "a b"
     "c d";
-    gap: 50px;
+    gap: 1fr;
     padding: 50px 0px;
     h2{
         margin: 0;
@@ -183,7 +186,6 @@ i{
 }
 
 
-
 /*MARKET LOCATION*/
 .market-locations{
     background-color: $secondary-bg;
@@ -193,8 +195,8 @@ i{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
-    "a b"
-    "c d";
+    "left-img online-content"
+    "locations-content right-img";
     p{
         color: $primary-white;
     }
@@ -204,17 +206,18 @@ i{
 }
 
 .online-content{
-    grid-area: b;
+    grid-area: online-content;
+    padding:0;
 }
 
 .locations-content{
-    grid-area: c;
+    grid-area: locations-content;
     text-align: right;
     padding: 0;
 }
 
 .left-image{
-    grid-area: a;
+    grid-area: left-img;
     img{
         position: relative;
         z-index: 1;
@@ -223,7 +226,7 @@ i{
 }
 
 .right-image{
-    grid-area: d;
+    grid-area: right-img;
     img{
         position: relative;
         z-index: 1;
@@ -256,8 +259,6 @@ i{
 
 .banner{
     grid-area: a;
-    // object-fit: cover;
-    // min-height: 200px;
 }
 
 /*BLOG ARTICLE*/
@@ -272,12 +273,14 @@ article, aside{
 .article-aside-comments{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, min-content); /*stop container from being too long*/
+    grid-template-rows: repeat(4, min-content); /*stop container from being too long*/
     grid-template-areas:
-    "a a b"
-    "a a d"
-    "c c d";
-    grid-gap: 100px;
+    "article article aside"
+    "article article empty"
+    "comment comment empty"
+    "comment-form comment-form empty";
+    column-gap: 100px;
+    row-gap: 20px;
     h4{
         color: $primary-bg;
         margin: 0;
@@ -290,8 +293,7 @@ article, aside{
 }
 
 article{
-    grid-area: a;
-
+    grid-area: article;
     img{
         position: relative;
         z-index: 1;
@@ -300,7 +302,7 @@ article{
 }
 
 .blog-aside{
-    grid-area: b;
+    grid-area: aside;
     margin-top: 100px;
     padding: 40px 0px;
     img{
@@ -310,12 +312,12 @@ article{
         margin-left: 10%;
     }
     p{
-        padding: 0px 20px;
+        padding: 0px 30px;
         margin: 0;
     }
     h2{
         margin-bottom: 0;
-        padding: 0px 20px;
+        padding: 0px 30px;
     }
     ul{
         margin: 0;
@@ -323,38 +325,51 @@ article{
 }
 
 .comment-section{
-    grid-area: c;
+    grid-area: comment;
     h2{
         color: $primary-font;
         margin-top: 5%;
+        padding-bottom: 40px;
     }
     h4{
         color: $primary-blue;
+        margin-bottom: 1%;
+    }
+    p{
+        margin: 0;
+        text-align: left;
     }
 }
 
+.comment-content{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    gap: 20px; 
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "img-a comment-a"
+    "img-b comment-b";
+}
+
 .comment-1{
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    margin: 7% 0 20% 0;
+    grid-area: comment-a;
+    // margin: 7% 0 20% 0;
     img{
-        width: 100%;
-        align-self: center;
+        grid-area: img-a;
     }
 }
 
 .comment-2{
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
+    grid-area: comment-b;
     img{
-        width: 100%;
+        max-width: 100%;
         align-self: center;
+        grid-area: img-b;
     }
-    p{
-        margin: 0;
-    }
+}
+
+.comment-form{
+    grid-area: comment-form;
 }
 
 /*CONTACT SECTION*/
