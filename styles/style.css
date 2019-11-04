@@ -795,6 +795,11 @@ header {
   border: 2px solid #0CADC0;
   width: 100%;
   padding: 4rem;
+  color: #FFFFFF;
+}
+
+.main-form textarea:focus {
+  border: 2px dashed #0CADC0;
 }
 
 .main-form .read-more-button {
@@ -805,6 +810,7 @@ header {
   border: none;
   background-color: #20404f;
   padding: 100px;
+  resize: none;
 }
 
 .main-form input[type=email],
@@ -814,24 +820,30 @@ header {
   border-bottom: 2px solid #0CADC0;
   margin-bottom: 40px;
   padding: 2rem;
+  color: #FFFFFF;
 }
 
-.main-form ::-webkit-input-placeholder {
+.main-form input[type=email]:focus,
+.main-form input[type=text]:focus {
+  border-bottom: 2px dashed #0CADC0;
+}
+
+::-webkit-input-placeholder {
   color: #FFFFFF;
   opacity: .9;
 }
 
-.main-form :-ms-input-placeholder {
+:-ms-input-placeholder {
   color: #FFFFFF;
   opacity: .9;
 }
 
-.main-form ::-ms-input-placeholder {
+::-ms-input-placeholder {
   color: #FFFFFF;
   opacity: .9;
 }
 
-.main-form ::placeholder {
+::placeholder {
   color: #FFFFFF;
   opacity: .9;
 }
@@ -852,6 +864,12 @@ header {
   width: 100%;
   margin: 2% 0;
   padding: 4rem;
+  color: #1A315C;
+  resize: none;
+}
+
+.comment-form textarea:focus {
+  border: 2px dashed #0CADC0;
 }
 
 .comment-form fieldset {
@@ -890,6 +908,12 @@ header {
   border-bottom: 2px solid #0CADC0;
   margin: 5% 0;
   padding: 2rem;
+  color: #1A315C;
+}
+
+.comment-form input[type=email]:focus,
+.comment-form input[type=text]:focus {
+  border-bottom: 2px dashed #0CADC0;
 }
 
 .comment-form input[type=email] {

@@ -10,6 +10,10 @@
         border: 2px solid $accent-blue;
         width: 100%;
         padding: 4rem;
+        color: $primary-white;
+        &:focus{
+            border: 2px dashed $accent-blue;
+        }
     }
     .read-more-button{
         width: 100%;
@@ -18,6 +22,7 @@
         border: none;
         background-color: $secondary-bg;
         padding: 100px;
+        resize: none;
     }
 }
 
@@ -28,10 +33,13 @@
     border-bottom: 2px solid $accent-blue;
     margin-bottom: 40px;
     padding: 2rem;
-    
+    color: $primary-white;
+    &:focus{
+        border-bottom: 2px dashed $accent-blue;
+    }
 }
 
-.main-form ::placeholder{
+::placeholder{
     color: $primary-white;
     opacity: .9;
 }
@@ -53,6 +61,11 @@
         width: 100%;
         margin: 2% 0;
         padding: 4rem;
+        color: $primary-blue;
+        resize: none;
+        &:focus{
+            border: 2px dashed $accent-blue;
+        }
     }
     fieldset{
         border: none;
@@ -68,7 +81,6 @@
     opacity: 1;
 }
 
-
 .comment-form input[type=email],
 .comment-form input[type=text]{
     background: transparent;
@@ -76,6 +88,10 @@
     border-bottom: 2px solid $accent-blue;
     margin: 5% 0;
     padding: 2rem;
+    color: $primary-blue;
+    &:focus{
+        border-bottom: 2px dashed $accent-blue;
+    }
 }
 
 .comment-form input[type=email]{
