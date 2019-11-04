@@ -510,9 +510,9 @@ article h2, aside h2 {
       grid-template-rows: repeat(4, min-content);
   /*stop container from being too long*/
       grid-template-areas: "article article aside" "article article empty" "comment comment empty" "comment-form comment-form empty";
-  -webkit-column-gap: 100px;
-          column-gap: 100px;
-  row-gap: 20px;
+  -webkit-column-gap: 5%;
+          column-gap: 5%;
+  row-gap: 1%;
 }
 
 .article-aside-comments h4 {
@@ -636,6 +636,7 @@ article img {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: comment-form;
+  margin-bottom: 10%;
 }
 
 /*CONTACT SECTION*/
@@ -645,7 +646,7 @@ article img {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
       grid-template-areas: "form form contact";
-  gap: 50px;
+  gap: 5%;
   margin: 5% 0;
 }
 
@@ -656,7 +657,7 @@ article img {
 }
 
 .aside-contact {
-  padding: 50px;
+  padding: 10px;
   background: none;
   color: #1E1713;
 }
@@ -820,6 +821,7 @@ header {
   width: 100%;
   padding: 4rem;
   color: #FFFFFF;
+  resize: none;
 }
 
 .main-form textarea:focus {
@@ -834,7 +836,6 @@ header {
   border: none;
   background-color: #20404f;
   padding: 100px;
-  resize: none;
 }
 
 .main-form input[type=email],
@@ -873,7 +874,7 @@ header {
 }
 
 .main-form input[type=email] {
-  width: 45%;
+  width: 44%;
 }
 
 .main-form input[type=text] {
@@ -945,7 +946,7 @@ header {
 }
 
 .comment-form input[type=text] {
-  width: 45%;
+  width: 44%;
   margin-right: 9%;
 }
 
@@ -966,6 +967,12 @@ footer p {
   .blog-hero,
   .contact-hero {
     min-height: 70vh;
+  }
+  .grid-wrap {
+    gap: 5%;
+  }
+  .main-form fieldset {
+    padding: 50px;
   }
 }
 
@@ -990,7 +997,7 @@ footer p {
   }
   .comment-form input[type="text"],
   .main-form input[type="text"] {
-    width: 42%;
+    width: 40%;
   }
 }
 
@@ -1052,7 +1059,8 @@ footer p {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "blog-post blog-img";
     margin: 0;
-    padding: 100px 0px;
+    gap: 5%;
+    padding: 50px 20px 100px 20px;
   }
   .small-grid-post {
     -ms-grid-row: 1;
@@ -1063,11 +1071,22 @@ footer p {
     margin: 0;
     padding: 5px;
   }
+  .small-grid-post .recent {
+    margin-top: 15%;
+  }
   .blog-aside img {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: blog-img;
     padding: 0;
     margin: 0;
+    -webkit-box-shadow: 15px 15px 0px 0px #0CADC0;
+            box-shadow: 15px 15px 0px 0px #0CADC0;
+  }
+  .comment-content img {
+    border-radius: 50%;
+  }
+  .comment-content p {
+    font-size: 1.75rem;
   }
 }

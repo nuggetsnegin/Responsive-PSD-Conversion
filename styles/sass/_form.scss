@@ -11,6 +11,7 @@
         width: 100%;
         padding: 4rem;
         color: $primary-white;
+        resize: none;
         &:focus{
             border: 2px dashed $accent-blue;
         }
@@ -22,7 +23,6 @@
         border: none;
         background-color: $secondary-bg;
         padding: 100px;
-        resize: none;
     }
 }
 
@@ -45,7 +45,7 @@
 }
 
 .main-form input[type=email]{
-    width: 45%;
+    width: 44%;
 }
 
 .main-form input[type=text]{
@@ -99,6 +99,6 @@
 }
 
 .comment-form input[type=text]{
-    width: 45%;
+    width: 44%;
     margin-right: 9%;
 }

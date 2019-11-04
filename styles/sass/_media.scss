@@ -4,6 +4,14 @@
     .contact-hero{
         min-height: 70vh;
     }
+
+    .grid-wrap{
+        gap: 5%;
+    }
+
+    .main-form fieldset{
+        padding: 50px;
+    }
 }
 
 @media (max-width: 1030px){
@@ -14,7 +22,6 @@
     .hero{
         min-height: 60vh;
     }
-
     .contact-hero,
     .blog-hero{
         min-height: 40vh;
@@ -33,15 +40,15 @@
 
     .comment-form input[type="text"],
     .main-form input[type="text"]{
-        width: 42%;
+        width: 40%;
     }
+
 }
 
 @media (max-width: 950px){ 
     .hero-img{
         margin-top: -40%;
     }
-
     .index-main{
         gap: 5%;
     }
@@ -100,7 +107,8 @@
         grid-template-areas:
         "blog-post blog-img";
         margin: 0;
-        padding: 100px 0px;
+        gap: 5%;
+        padding: 50px 20px 100px 20px;
     }
 
     .small-grid-post{
@@ -109,14 +117,28 @@
             margin: 0;
             padding: 5px;
         }
+        .recent{
+            margin-top: 15%;
+        }
+
     }
+
     .blog-aside img{
         grid-area: blog-img;
         padding: 0;
         margin: 0;
+        box-shadow: 15px 15px 0px 0px #0CADC0;
 
     }
-
+    
+    .comment-content{
+        img{
+            border-radius: 50%;
+        }
+        p{
+            font-size: 1.75rem;
+        }
+    }
 
 
 }

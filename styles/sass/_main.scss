@@ -286,8 +286,8 @@ article, aside{
     "article article empty"
     "comment comment empty"
     "comment-form comment-form empty";
-    column-gap: 100px;
-    row-gap: 20px;
+    column-gap: 5%;
+    row-gap: 1%;
     h4{
         color: $primary-bg;
         margin: 0;
@@ -377,6 +377,7 @@ article{
 
 .comment-form{
     grid-area: comment-form;
+    margin-bottom: 10%;
 }
 
 /*CONTACT SECTION*/
@@ -384,7 +385,7 @@ article{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "form form contact";
-    gap: 50px;
+    gap: 5%;
     margin: 5% 0;
 }
 
@@ -393,7 +394,7 @@ article{
 }
 
 .aside-contact{
-    padding: 50px;
+    padding: 10px;
     background: none;
     color: $primary-font;
     i{
