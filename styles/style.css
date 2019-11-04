@@ -290,7 +290,7 @@ img {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
       grid-template-areas: "a a b";
-  gap: 200px;
+  gap: 10%;
   padding-bottom: 100px;
 }
 
@@ -319,6 +319,8 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 100px 0px;
+  -webkit-column-gap: 5%;
+          column-gap: 5%;
 }
 
 /*INFORMATION*/
@@ -329,7 +331,7 @@ img {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas: "a b" "c d";
-  gap: 50px;
+  columnn-gap: 5%;
   padding: 50px 0px;
 }
 
@@ -391,7 +393,7 @@ i {
 /*MARKET LOCATION*/
 .market-locations {
   background-color: #20404f;
-  gap: 50px;
+  gap: 5%;
   padding: 50px 0px;
   display: -ms-grid;
   display: grid;
@@ -543,7 +545,7 @@ article img {
   position: relative;
   z-index: 1;
   margin-top: -20%;
-  margin-left: 10%;
+  padding-left: 5%;
 }
 
 .blog-aside p {
@@ -750,7 +752,11 @@ header {
 }
 
 .hero h1 {
-  width: 50%;
+  width: 100%;
+}
+
+.h1-break {
+  display: block;
   /*break text into two lines*/
 }
 
@@ -943,4 +949,12 @@ footer {
 footer p {
   margin: 0;
   /*remove 👻 space*/
+}
+
+@media (max-width: 1280px) {
+  .hero,
+  .blog-hero,
+  .contact-hero {
+    min-height: 70vh;
+  }
 }

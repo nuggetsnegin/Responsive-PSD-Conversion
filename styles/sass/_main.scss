@@ -107,7 +107,7 @@ img{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "a a b";
-    gap: 200px;
+    gap: 10%;
     padding-bottom: 100px;
 }
 
@@ -128,6 +128,7 @@ img{
     display: flex;
     justify-content: space-between;
     padding: 100px 0px;
+    column-gap: 5%;
 }
 
 /*INFORMATION*/
@@ -138,7 +139,7 @@ img{
     grid-template-areas:
     "a b"
     "c d";
-    gap: 50px;
+    columnn-gap: 5%;
     padding: 50px 0px;
     h2{
         margin: 0;
@@ -188,7 +189,7 @@ i{
 /*MARKET LOCATION*/
 .market-locations{
     background-color: $secondary-bg;
-    gap: 50px;
+    gap: 5%;
     padding: 50px 0px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -308,7 +309,7 @@ article{
         position: relative;
         z-index: 1;
         margin-top: -20%;
-        margin-left: 10%;
+        padding-left: 5%;
     }
     p{
         padding: 0px 30px;
