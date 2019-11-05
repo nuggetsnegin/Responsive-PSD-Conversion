@@ -1,27 +1,28 @@
  /* nav code: */
  ul.nav {
-	background: black;
+	background: $primary-blue;
 	position: fixed;
-	z-index: 10;
-	width: 30%; /*note how width and right are the same values*/
-	right: -30%; /* Off the screen as wide as you are */
+	z-index: 2;
+	width: 60%;
+	right: -60%; 
 	top: 0;
-	height: 100%;
+	height: 50%;
 	transition: all 0.5s; /* magic to animate it */
 }
 
 ul.nav a {
-	border-bottom: 1px solid grey;
+	color: $primary-white;
 	display: inline-block;
-	font-size: 1rem;
+	font-size: 2rem;
+	text-transform: uppercase;
 	width: 100%;
-	padding: 20px;
+	padding: 0 10px;
 	transition: all 0.3s; /*we also transition the background colour here*/
 }
 
 ul.nav a:hover,
 ul.nav a:focus {
-	background: #3498db;
+	border-bottom: 2px solid $accent-blue;
 }
 
 /*  When the input is checked
@@ -40,6 +41,6 @@ label[for="toggle"] {
 	position: fixed;
 	top: 10px;
 	left: 10px;
-	color: white;
+	color: $primary-blue;
 	z-index: 10;
 }
