@@ -399,7 +399,7 @@ i {
 }
 
 .market-locations {
-  gap: 5%;
+  gap: 10%;
   padding: 50px 0px;
   display: -ms-grid;
   display: grid;
@@ -445,6 +445,10 @@ i {
   position: relative;
   z-index: 1;
   margin-top: -100px;
+  width: 100%;
+  max-height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .right-image {
@@ -457,9 +461,10 @@ i {
   position: relative;
   z-index: 1;
   margin-bottom: -100px;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+  width: 100%;
+  max-height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*STYLE SECTION*/
@@ -1364,3 +1369,8 @@ testing vscode comments*/
     font-size: 1.5rem;
   }
 }
+
+/* add focus to buttons*/
+/*fix dumb hero img add max width?*/
+/*label for */
+/*check header collapse on main*/
