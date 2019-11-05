@@ -845,6 +845,11 @@ header {
   margin-top: 5%;
 }
 
+.mobile-navbar span {
+  opacity: 0;
+  /*hide label text*/
+}
+
 /*CONTACT FORM*/
 .main-form {
   position: relative;
