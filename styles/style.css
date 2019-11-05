@@ -282,6 +282,10 @@ img {
           box-shadow: 0px 0px 0px 15px #0CADC0;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 /*MAIN CONTENT*/
 .index-main {
   background-color: #CCEDFB;
@@ -430,7 +434,7 @@ i {
   grid-area: locations-content;
   text-align: right;
   padding-left: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 .left-image {
@@ -462,8 +466,9 @@ i {
 .style {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-rows: (min-content)[2];
+      grid-template-rows: repeat(2, -webkit-min-content);
+      grid-template-rows: repeat(2, min-content);
       grid-template-areas: "a" "b";
   text-align: center;
 }
@@ -481,7 +486,7 @@ i {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: b;
-  margin-top: 5%;
+  padding: 50px 0px;
 }
 
 .banner {
@@ -963,6 +968,12 @@ footer p {
 }
 
 @media (max-width: 1285px) {
+  .hero h1 {
+    width: 60%;
+  }
+  .h1-break {
+    display: inline-block;
+  }
   .hero,
   .blog-hero,
   .contact-hero {
@@ -1029,12 +1040,7 @@ footer p {
   .online-content,
   .locations-content {
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 50px;
-  }
-  .style-content {
-    margin-top: 0;
-    padding-bottom: 50px;
+    padding: 20px 50px;
   }
   .article-aside-comments {
     -ms-grid-columns: (1fr)[2];
@@ -1088,6 +1094,9 @@ footer p {
   .comment-content p {
     font-size: 1.75rem;
   }
+  .aside-contact {
+    font-size: 1.5rem;
+  }
 }
 
 /*stack forms, stack gallery, stack
@@ -1130,3 +1139,105 @@ fix h1 on cover*/
 and contact and contact info
 need to find solution for main img
 testing vscode comments*/
+@media (max-width: 727px) {
+  .hero-img {
+    display: none;
+  }
+  .image-flex {
+    padding: 50px 100px;
+    gap: 1%;
+  }
+  .index-main {
+    text-align: center;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (min-content)[2];
+        grid-template-rows: repeat(2, -webkit-min-content);
+        grid-template-rows: repeat(2, min-content);
+        grid-template-areas: "a" "b";
+    padding-bottom: 50px;
+  }
+  .index-main img {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (max-width: 660px) {
+  .hero,
+  .blog-hero,
+  .contact-hero {
+    min-height: 40vh;
+  }
+  .hamburger-menu {
+    display: block;
+    position: fixed;
+    /*so it stays on the screen during scroll*/
+    top: 0;
+    right: 0;
+    font-size: 5rem;
+    padding: 20px;
+    z-index: 1;
+    opacity: .9;
+  }
+  .hamburger-menu i {
+    color: #0CADC0;
+  }
+  .small-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (min-content)[2];
+        grid-template-rows: repeat(2, -webkit-min-content);
+        grid-template-rows: repeat(2, min-content);
+        grid-template-areas: "blog-post" "blog-img";
+    gap: 1%;
+  }
+  .small-grid img {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-top: 2%;
+  }
+  .small-grid .recent {
+    margin: 1%;
+  }
+  .article-aside-comments {
+        grid-template-areas: "aside aside" "article article" "comment comment" "comment-form comment-form";
+  }
+  .comment-form {
+    margin-bottom: 25%;
+  }
+  .comment-form input[type=text] {
+    width: 40%;
+  }
+  .comment-form input[type=email] {
+    width: 45%;
+  }
+  .grid-wrap {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (min-content)[2];
+        grid-template-rows: repeat(2, -webkit-min-content);
+        grid-template-rows: repeat(2, min-content);
+        grid-template-areas: "form" "contact";
+    gap: 1%;
+  }
+  .grid-wrap .main-form {
+    margin: 0;
+    padding: 30px;
+  }
+  .grid-wrap input[type=text] {
+    width: 40%;
+  }
+  .grid-wrap input[type=email] {
+    width: 47%;
+  }
+  .aside-contact {
+    font-size: 2rem;
+    text-align: center;
+    margin: 2% 0;
+  }
+}
