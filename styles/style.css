@@ -970,12 +970,15 @@ footer p {
 /* nav code: */
 ul.nav {
   background: #1A315C;
+  border-top-left-radius: 30%;
+  border-bottom-left-radius: 10%;
   position: fixed;
   z-index: 2;
   width: 60%;
   right: -60%;
-  top: 0;
+  top: 5%;
   height: 50%;
+  opacity: .9;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   /* magic to animate it */
@@ -984,10 +987,10 @@ ul.nav {
 ul.nav a {
   color: #FFFFFF;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
-  width: 100%;
-  padding: 0 10px;
+  width: 60%;
+  padding: 5px 10px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   /*we also transition the background colour here*/
@@ -1011,13 +1014,22 @@ input[type="checkbox"] {
   /*hide the input, we don't need to see it */
 }
 
-label[for="toggle"] {
+label[for="toggle-menu"] {
   /*position the menu so that it doesn't slide off screen when we open it*/
   position: fixed;
-  top: 10px;
-  left: 10px;
+  top: 1%;
+  left: 85%;
   color: #1A315C;
   z-index: 10;
+}
+
+.mobile-navbar i {
+  font-size: 5rem;
+  color: #1A315C;
+  opacity: .9;
+  background: white;
+  border-radius: 30%;
+  border: 10px solid white;
 }
 
 @media (max-width: 1285px) {
@@ -1102,7 +1114,8 @@ label[for="toggle"] {
         grid-template-rows: repeat(3, -webkit-min-content);
         grid-template-rows: repeat(3, min-content);
         grid-template-areas: "aside aside" "article article" "comment comment-form";
-    gap: 1%;
+    gap: 0;
+    /*get rid of ghost whitespace*/
   }
   article img {
     width: 100%;
@@ -1224,19 +1237,11 @@ testing vscode comments*/
 }
 
 @media (max-width: 660px) {
-  .hamburger-menu {
-    display: block;
-    position: fixed;
-    /*so it stays on the screen during scroll*/
-    top: 0;
-    right: 0;
-    font-size: 5rem;
-    padding: 20px;
-    z-index: 1;
-    opacity: .9;
+  .nav-links {
+    display: none;
   }
-  .hamburger-menu i {
-    color: #0CADC0;
+  .mobile-navbar {
+    display: block;
   }
   .small-grid {
     -ms-grid-columns: 1fr;
@@ -1280,14 +1285,5 @@ testing vscode comments*/
     font-size: 2rem;
     text-align: center;
     margin: 2% 0;
-  }
-}
-
-@media (max-width: 585px) {
-  .nav-links {
-    display: none;
-  }
-  .mobile-navbar {
-    display: block;
   }
 }

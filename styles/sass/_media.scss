@@ -94,7 +94,7 @@
         "aside aside"
         "article article"
         "comment comment-form";
-        gap: 1%;
+        gap: 0; /*get rid of ghost whitespace*/
     }
 
     article img{
@@ -225,19 +225,13 @@ testing vscode comments*/
 }
 
 @media (max-width: 660px){
-    .hamburger-menu{
-        display: block;
-        position: fixed; /*so it stays on the screen during scroll*/
-        top: 0;
-        right: 0;
-        font-size: 5rem;
-        padding: 20px;
-        z-index: 1;
-        opacity: .9;
-        i{
-            color: $accent-blue;
-        } 
-    }
+    .nav-links{
+        display: none;
+     }
+     .mobile-navbar{
+         display: block;
+     }
+    
 
     .small-grid{
         grid-template-columns: 1fr;
@@ -291,12 +285,7 @@ testing vscode comments*/
 }
 
 @media(max-width: 585px){
-    .nav-links{
-       display: none;
-    }
-    .mobile-navbar{
-        display: block;
-    }
+
 
 
 }

@@ -1,22 +1,25 @@
  /* nav code: */
  ul.nav {
 	background: $primary-blue;
+	border-top-left-radius: 30%;
+	border-bottom-left-radius: 10%;
 	position: fixed;
 	z-index: 2;
 	width: 60%;
 	right: -60%; 
-	top: 0;
+	top: 5%;
 	height: 50%;
+	opacity: .9;
 	transition: all 0.5s; /* magic to animate it */
 }
 
 ul.nav a {
 	color: $primary-white;
 	display: inline-block;
-	font-size: 2rem;
+	font-size: 2.5rem;
 	text-transform: uppercase;
-	width: 100%;
-	padding: 0 10px;
+	width: 60%;
+	padding: 5px 10px;
 	transition: all 0.3s; /*we also transition the background colour here*/
 }
 
@@ -36,11 +39,20 @@ input[type="checkbox"] {
 	display: none;  /*hide the input, we don't need to see it */
 }
 
-label[for="toggle"] {
+label[for="toggle-menu"] {
 	/*position the menu so that it doesn't slide off screen when we open it*/
 	position: fixed;
-	top: 10px;
-	left: 10px;
+	top: 1%;
+	left: 85%;
 	color: $primary-blue;
 	z-index: 10;
+}
+
+.mobile-navbar i{
+	font-size: 5rem;
+	color: $primary-blue;
+	opacity: .9;
+	background: white;
+	border-radius: 30%;
+	border: 10px solid white;
 }
