@@ -1,146 +1,157 @@
 @media (max-width: 1285px) {
-    .hero h1{
+    .hero h1 {
         width: 60%;
     }
 
-    .h1-break{
+    .h1-break {
         display: inline-block;
     }
 
     .hero,
     .blog-hero,
-    .contact-hero{
+    .contact-hero {
         min-height: 70vh;
     }
 
-    .hero-img{
+    .hero-img {
         margin-top: -10%;
         width: 50%;
     }
 
-    .grid-wrap{
+    .grid-wrap {
         gap: 5%;
     }
 
-    .main-form fieldset{
+    .main-form fieldset {
         padding: 50px;
     }
 }
 
-@media (max-width: 1030px){
+@media (max-width: 1030px) {
+
     .hero,
     .contact-hero,
-    .blog-hero{
+    .blog-hero {
         min-height: 60vh;
     }
 
-    .information{
+    .information {
         grid-template-columns: 1fr;
         grid-template-areas:
-        "a"
-        "b"
-        "c"
-        "d";
+            "a"
+            "b"
+            "c"
+            "d";
     }
-    .market-locations img{
+
+    .market-locations img {
         margin: 0;
     }
 
     .comment-form input[type="text"],
-    .main-form input[type="text"]{
+    .main-form input[type="text"] {
         width: 40%;
     }
 
 }
 
-@media (max-width: 950px){ 
-    .hero-img{
+@media (max-width: 950px) {
+    .hero-img {
         display: none;
     }
-    .index-main{
+
+    .index-main {
         gap: 5%;
     }
-    .market-locations{
+
+    .market-locations {
         grid-template-columns: 1fr;
         grid-template-rows: 4fr;
         grid-template-areas:
-        "left-img"
-        "online-content"
-        "right-img"
-        "locations-content";
+            "left-img"
+            "online-content"
+            "right-img"
+            "locations-content";
         gap: 1%;
         padding-top: 10px;
         padding-bottom: 50px;
-        img{
+
+        img {
             width: 100%;
             height: 300px;
             object-fit: cover;
         }
-        p{
+
+        p {
             margin-bottom: 0;
         }
-        
+
     }
+
     .online-content,
-    .locations-content{
+    .locations-content {
         text-align: center;
         padding: 20px 50px;
     }
 
-    .article-aside-comments{
+    .article-aside-comments {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, min-content);
         grid-template-areas:
-        "aside aside"
-        "article article"
-        "comment comment-form";
-        gap: 0; /*get rid of ghost whitespace*/
+            "aside aside"
+            "article article"
+            "comment comment-form";
+        gap: 0;
+        /*get rid of ghost whitespace*/
     }
 
-    article img{
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
+    article img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
     }
 
-    .small-grid{
+    .small-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
-        "blog-post blog-img";
+            "blog-post blog-img";
         margin: 0;
         gap: 5%;
         padding: 50px 20px 100px 20px;
     }
 
-    .small-grid-post{
+    .small-grid-post {
         grid-area: blog-post;
-        h2{
+
+        h2 {
             margin: 0;
             padding: 5px;
         }
-        .recent{
+
+        .recent {
             margin-top: 15%;
         }
     }
 
-    .blog-aside img{
+    .blog-aside img {
         grid-area: blog-img;
         padding: 0;
         margin: 0;
         box-shadow: 15px 15px 0px 0px #0CADC0;
     }
-    
-    .comment-content{
-        img{
+
+    .comment-content {
+        img {
             border-radius: 50%;
         }
-        p{
+
+        p {
             font-size: 1.75rem;
         }
     }
 
-    .aside-contact{
+    .aside-contact {
         font-size: 1.5rem;
     }
 
@@ -154,47 +165,49 @@ fix h1 on cover*/
 
 /* 880 px */
 
-@media (max-width: 885px){
+@media (max-width: 885px) {
+
     .hero,
     .blog-hero,
-    .contact-hero{
+    .contact-hero {
         min-height: 40vh;
     }
 
     .hero h1,
     .contact-hero h1,
-    .blog-hero h1{
+    .blog-hero h1 {
         padding-bottom: 50px;
     }
 
-    .main-form{
+    .main-form {
         margin-top: 5%;
     }
 
     .main-form input[type=email],
     .main-form input[type=text],
     .comment-form input[type=text],
-    .comment-form input[type=email]{
+    .comment-form input[type=email] {
         width: 100%;
         margin-bottom: 5%;
         padding: 1.5rem;
     }
+
     .main-form textarea,
-    .comment-form textarea{
+    .comment-form textarea {
         margin-top: 5%;
         padding: 1.5rem;
     }
 
-    .index-main{
+    .index-main {
         gap: 2%;
     }
 
-    .image-flex{
+    .image-flex {
         flex-direction: column;
         gap: 2%;
     }
 
-    .image-flex img{
+    .image-flex img {
         align-self: center;
     }
 
@@ -206,96 +219,104 @@ need to find solution for main img
 testing vscode comments*/
 
 
-@media (max-width: 727px){
+@media (max-width: 727px) {
 
-    .hero h1{
+    .hero h1 {
         font-size: 4.5rem;
     }
 
-    .image-flex{
+    .image-flex {
         padding: 50px 100px;
         gap: 1%;
     }
 
-    .index-main{
+    .index-main {
         text-align: center;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, min-content);
         grid-template-areas:
-        "a"
-        "b";
-        img{
+            "a"
+            "b";
+
+        img {
             width: 100%;
             height: 300px;
             object-fit: cover;
         }
+
         padding-bottom: 50px;
     }
 
 }
 
-@media (max-width: 660px){
+@media (max-width: 660px) {
 
     .blog-hero h1,
-    .contact-hero h1{
+    .contact-hero h1 {
         margin-top: 15%;
     }
 
-    nav{
+    nav {
+        display: block;
+        /* to fix logo*/
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-navbar {
         display: block;
     }
 
-    .nav-links{
-        display: none;
-     }
-     .mobile-navbar{
-         display: block;
-     }
-    
 
-    .small-grid{
+    .small-grid {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, min-content);
         grid-template-areas:
-        "blog-post"
-        "blog-img";
+            "blog-post"
+            "blog-img";
         gap: 1%;
-        img{
+
+        img {
             width: 100%;
             height: 300px;
             object-fit: cover;
             margin-top: 2%;
         }
-        .recent{
+
+        .recent {
             margin: 1%;
         }
     }
 
-    .article-aside-comments{
+    .article-aside-comments {
         grid-template-areas:
-        "aside aside"
-        "article article"
-        "comment comment"
-        "comment-form comment-form";
+            "aside aside"
+            "article article"
+            "comment comment"
+            "comment-form comment-form";
     }
-    .comment-form{
+
+    .comment-form {
         margin-bottom: 25%;
     }
 
-    .grid-wrap{
+    .grid-wrap {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, min-content);
         grid-template-areas:
-        "form"
-        "contact";
+            "form"
+            "contact";
         gap: 1%;
-        .main-form{
+
+        .main-form {
             margin: 0;
             padding: 30px;
         }
     }
 
-    .aside-contact{
+    .aside-contact {
         font-size: 2rem;
         text-align: center;
         margin: 2% 0;
@@ -304,55 +325,65 @@ testing vscode comments*/
 
 }
 
-@media(max-width: 500px){
-    h1{
+@media(max-width: 500px) {
+    h1 {
         line-height: 45px;
     }
+
     .blog-hero h1,
-    .contact-hero h1{
+    .contact-hero h1 {
         font-size: 5rem;
     }
 
-    .image-flex{
+    .image-flex {
         padding: 40px 5px;
     }
-    p{
+
+    p {
         font-size: 1.75rem;
         padding: 10px 0px;
     }
+
     h2,
-    h3{
+    h3 {
         font-size: 3rem;
         line-height: 40px;
     }
-    .icon-flex{
+
+    .icon-flex {
         display: block;
         text-align: center;
     }
-    .information p{
+
+    .information p {
         padding: 5px 0;
         text-align: center;
         margin-bottom: 50px;
     }
-    .contact-info p{
+
+    .contact-info p {
         padding: 0;
     }
-    .aside-contact{
+
+    .aside-contact {
         font-size: 4rem;
     }
-    .main-form{
-        fieldset{
-        padding: 20px;
+
+    .main-form {
+        fieldset {
+            padding: 20px;
         }
     }
-    .small-grid-post li{
+
+    .small-grid-post li {
         font-size: 1.75rem;
     }
 
-    .article-aside-comments h4{
+    .article-aside-comments h4 {
         font-size: 1.3rem;
     }
-    .comment-content p{
+
+    .comment-content p {
         font-size: 1.5rem;
     }
 
@@ -360,5 +391,4 @@ testing vscode comments*/
 
 /* add focus to buttons*/
 /*fix dumb hero img add max width?*/
-/*label for */
 /*check header collapse on main*/

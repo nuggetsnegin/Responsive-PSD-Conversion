@@ -41,7 +41,9 @@ nav ul li{
     }
     a:hover{
         border-bottom: 2px solid $accent-blue;
-
+    }
+    a:focus{
+        border-bottom: 2px solid $accent-blue;
     }
     .active{
         border-bottom: 2px solid $accent-blue;
