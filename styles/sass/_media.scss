@@ -156,6 +156,12 @@ fix h1 on cover*/
 
 @media (max-width: 885px){
 
+    .hero,
+    .blog-hero,
+    .contact-hero{
+        min-height: 40vh;
+    }
+
     .main-form input[type=email],
     .main-form input[type=text],
     .comment-form input[type=text],
@@ -219,11 +225,6 @@ testing vscode comments*/
 }
 
 @media (max-width: 660px){
-    .hero,
-    .blog-hero,
-    .contact-hero{
-        min-height: 40vh;
-    }
     .hamburger-menu{
         display: block;
         position: fixed; /*so it stays on the screen during scroll*/
@@ -265,13 +266,8 @@ testing vscode comments*/
     }
     .comment-form{
         margin-bottom: 25%;
-        input[type=text]{
-            width: 40%;
-        }
-        input[type=email]{
-            width: 45%;
-        }
     }
+
     .grid-wrap{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, min-content);
@@ -282,12 +278,6 @@ testing vscode comments*/
         .main-form{
             margin: 0;
             padding: 30px;
-        }
-        input[type=text]{
-            width: 40%;
-        }
-        input[type=email]{
-            width: 47%;
         }
     }
 
@@ -301,6 +291,13 @@ testing vscode comments*/
 }
 
 @media(max-width: 585px){
+    .nav-links{
+       display: none;
+    }
+    .mobile-navbar{
+        display: block;
+    }
+
 
 }
 
