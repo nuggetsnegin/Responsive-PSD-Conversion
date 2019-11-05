@@ -1014,7 +1014,7 @@ ul.nav {
   width: 60%;
   right: -60%;
   top: 5%;
-  height: 50%;
+  min-height: 50%;
   opacity: .9;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
