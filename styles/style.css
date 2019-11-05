@@ -1080,6 +1080,9 @@ label[for="toggle-menu"] {
   h1 {
     font-size: 4rem;
   }
+  .hero-img {
+    display: none;
+  }
   .index-main {
     gap: 5%;
   }
@@ -1211,9 +1214,6 @@ and contact and contact info
 need to find solution for main img
 testing vscode comments*/
 @media (max-width: 727px) {
-  .hero-img {
-    display: none;
-  }
   .image-flex {
     padding: 50px 100px;
     gap: 1%;
