@@ -1176,6 +1176,9 @@ fix h1 on cover*/
   .contact-hero {
     min-height: 40vh;
   }
+  .hero h1 {
+    padding-bottom: 50px;
+  }
   .main-form input[type=email],
   .main-form input[type=text],
   .comment-form input[type=text],
@@ -1338,5 +1341,8 @@ testing vscode comments*/
   }
   .article-aside-comments h4 {
     font-size: 1.3rem;
+  }
+  .comment-content p {
+    font-size: 1.5rem;
   }
 }
