@@ -1176,8 +1176,13 @@ fix h1 on cover*/
   .contact-hero {
     min-height: 40vh;
   }
-  .hero h1 {
+  .hero h1,
+  .contact-hero h1,
+  .blog-hero h1 {
     padding-bottom: 50px;
+  }
+  .main-form {
+    margin-top: 5%;
   }
   .main-form input[type=email],
   .main-form input[type=text],
@@ -1242,7 +1247,7 @@ testing vscode comments*/
 @media (max-width: 660px) {
   .blog-hero h1,
   .contact-hero h1 {
-    margin-top: 25%;
+    margin-top: 15%;
   }
   nav {
     display: block;
