@@ -1,117 +1,117 @@
 /*NAVIGATION*/
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center; /*align logo on main axis*/
-    width: 100%;
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; /*align logo on main axis*/
+  width: 100%;
 }
 
-.nav-links{
-    font-family: $lato;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 29px;
-    letter-spacing: 1.4px;
-    color: $primary-blue;
-    display: flex;
+.nav-links {
+  font-family: $lato;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 29px;
+  letter-spacing: 1.4px;
+  color: $primary-blue;
+  display: flex;
 }
 
-.logo{ /*logo a div instead of h1 because sr can read title 🐻*/
-    font-family: $pacifico;
-    font-size: 3rem;
-    line-height: 24px;
-    letter-spacing: 1.7px;
+.logo {
+  /*logo a div instead of h1 because sr can read title 🐻*/
+  font-family: $pacifico;
+  font-size: 3rem;
+  line-height: 24px;
+  letter-spacing: 1.7px;
+  color: $primary-font;
+  padding: 20px;
+  a {
+    text-decoration: none;
     color: $primary-font;
-    padding: 20px;
-    a{
-        text-decoration: none;
-        color: $primary-font;
-    }
-    a:hover{
-        color: $accent-blue;
-    }
+  }
+  a:hover {
+    color: $accent-blue;
+  }
 }
 
-nav ul li{
-    list-style: none;
-    padding: 20px;
-    a{
-        text-decoration: none;
-        color: $primary-blue;
-    }
-    a:hover{
-        border-bottom: 2px solid $accent-blue;
-    }
-    a:focus{
-        border-bottom: 2px solid $accent-blue;
-    }
-    .active{
-        border-bottom: 2px solid $accent-blue;
-    }
+nav ul li {
+  list-style: none;
+  padding: 20px;
+  a {
+    text-decoration: none;
+    color: $primary-blue;
+  }
+  a:hover {
+    border-bottom: 2px solid $accent-blue;
+  }
+  a:focus {
+    border-bottom: 2px solid $accent-blue;
+  }
+  .active {
+    border-bottom: 2px solid $accent-blue;
+  }
 }
 
-.mobile-navbar{
-    display: none;
+.mobile-navbar {
+  display: none;
 }
 
 /*MAIN HEADER & HERO*/
-header{
-    background: $primary-white;
+header {
+  background: $primary-white;
 }
 
-.hero{
-    background: url(../assets/header-home.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 90vh;
+.hero {
+  background: url(../assets/header-home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
 }
 
 .hero h1,
 .blog-hero h1,
-.contact-hero h1{
-    width: 100%; 
+.contact-hero h1 {
+  width: 100%;
 }
 
-.h1-break{
-    display: block; /*break text into two lines*/
+.h1-break {
+  display: block; /*break text into two lines*/
 }
 
-.hero-img{
-    position: relative;
-    z-index: 1;
-    margin-top: -20%;
-    max-width: 80%;
+.hero-img {
+  position: relative;
+  z-index: 1;
+  margin-top: -20%;
+  max-width: 80%;
 }
 
 /*BLOG HEADER & HERO*/
-.blog-hero{
-    background: url(../assets/blog-header.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 90vh;
+.blog-hero {
+  background: url(../assets/blog-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
 }
 
-.blog-hero h1{
-    margin-top: 5%;
+.blog-hero h1 {
+  margin-top: 5%;
 }
 
 /*CONTACT HEADER*/
 
-.contact-hero{
-    background: url(../assets/contact-header.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 90vh;
+.contact-hero {
+  background: url(../assets/contact-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
 }
 
-.contact-hero h1{
-    margin-top: 5%;
+.contact-hero h1 {
+  margin-top: 5%;
 }
 
-
-.mobile-navbar span{
-    opacity: 0;/*hide label text*/
+.mobile-navbar span {
+  opacity: 0; /*hide label text*/
 }

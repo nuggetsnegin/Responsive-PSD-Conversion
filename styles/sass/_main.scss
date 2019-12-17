@@ -1,467 +1,467 @@
 html {
-    font-size: 62.5%;
-    /*10 pixels*/
+  font-size: 62.5%;
+  /*10 pixels*/
 }
 
 body {
-    font-family: $lato;
-    font-size: 2rem;
-    line-height: 28px;
-    letter-spacing: 2px;
-    background-color: $primary-bg;
+  font-family: $lato;
+  font-size: 2rem;
+  line-height: 28px;
+  letter-spacing: 2px;
+  background-color: $primary-bg;
 }
 
 .wrapper {
-    margin: 0 auto;
-    width: 90%;
-    max-width: 1600px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1600px;
 }
 
 h1 {
-    font-family: $pacifico;
-    font-size: 5.8rem;
-    line-height: 68px;
-    color: $primary-blue;
-    padding-left: 10%;
+  font-family: $pacifico;
+  font-size: 5.8rem;
+  line-height: 68px;
+  color: $primary-blue;
+  padding-left: 10%;
 }
 
 h2 {
-    font-family: $pacifico;
-    font-size: 4.3rem;
-    line-height: 58px;
-    letter-spacing: 2.7px;
-    color: $primary-blue;
+  font-family: $pacifico;
+  font-size: 4.3rem;
+  line-height: 58px;
+  letter-spacing: 2.7px;
+  color: $primary-blue;
 }
 
 h3 {
-    font-family: $pacifico;
-    font-size: 4rem;
-    line-height: 58px;
-    letter-spacing: 2.5px;
-    color: $primary-white;
+  font-family: $pacifico;
+  font-size: 4rem;
+  line-height: 58px;
+  letter-spacing: 2.5px;
+  color: $primary-white;
 }
 
 button {
-    font-family: $pacifico;
-    font-size: 2.7rem;
-    text-align: center;
-    letter-spacing: 1.4px;
-    line-height: 32px;
-    border: 0;
-    padding: 10px 30px;
+  font-family: $pacifico;
+  font-size: 2.7rem;
+  text-align: center;
+  letter-spacing: 1.4px;
+  line-height: 32px;
+  border: 0;
+  padding: 10px 30px;
 }
 
 .read-more-button {
-    font-family: $pacifico;
-    background-color: $secondary-button;
-    color: $primary-font;
-    margin-top: 2%;
+  font-family: $pacifico;
+  background-color: $secondary-button;
+  color: $primary-font;
+  margin-top: 2%;
 
-    &:hover {
-        background-color: $primary-font;
-        color: $secondary-button;
-    }
-    &:focus{ /*for accessibility*/
-        background-color: $primary-font;
-        color: $secondary-button;
-        border: 2px dashed $accent-blue;
-    }
+  &:hover {
+    background-color: $primary-font;
+    color: $secondary-button;
+  }
+  &:focus {
+    /*for accessibility*/
+    background-color: $primary-font;
+    color: $secondary-button;
+    border: 2px dashed $accent-blue;
+  }
 }
 
-
 .find-out-button {
-    font-family: $pacifico;
-    background-color: $primary-blue;
-    color: $primary-white;
-    margin-top: 2%;
+  font-family: $pacifico;
+  background-color: $primary-blue;
+  color: $primary-white;
+  margin-top: 2%;
 
-    &:hover {
-        color: $primary-blue;
-        background-color: $primary-white;
-    }
-    &:focus{ /*for accessibility*/
-        background-color: $primary-font;
-        color: $secondary-button;
-        border: 2px dashed $accent-blue;
-    }
+  &:hover {
+    color: $primary-blue;
+    background-color: $primary-white;
+  }
+  &:focus {
+    /*for accessibility*/
+    background-color: $primary-font;
+    color: $secondary-button;
+    border: 2px dashed $accent-blue;
+  }
 }
 
 img {
-    max-width: 100%;
-    display: block;
-    /*bye bye 👻 space*/
+  max-width: 100%;
+  display: block;
+  /*bye bye 👻 space*/
 }
 
 .box-border-left {
-    box-shadow: -15px 15px 0px 0px #0CADC0;
+  box-shadow: -15px 15px 0px 0px #0cadc0;
 }
 
 .box-border-right {
-    box-shadow: 15px 15px 0px 0px #0CADC0;
+  box-shadow: 15px 15px 0px 0px #0cadc0;
 }
 
 .box-border {
-    box-shadow: 0px 0px 0px 15px #0CADC0;
+  box-shadow: 0px 0px 0px 15px #0cadc0;
 }
 
 /*MAIN CONTENT*/
 .index-main-bg {
-    background-color: $primary-bg;
+  background-color: $primary-bg;
 }
 
 .index-main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "a a b";
-    gap: 15%;
-    padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "a a b";
+  gap: 15%;
+  padding-bottom: 100px;
 }
 
 .main-image {
-    grid-area: b;
-    align-self: center;
+  grid-area: b;
+  align-self: center;
 }
 
 .main-content {
-    grid-area: a;
+  grid-area: a;
 }
 
 /*GALLERY*/
 .image-gallery {
-    background-color: $secondary-bg;
+  background-color: $secondary-bg;
 }
 
 .image-flex {
-    display: flex;
-    justify-content: space-between;
-    padding: 100px 0px;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0px;
 
-    img{
-        width: calc(100% /3 - 20px);
-        margin: 5px;
-    }
+  img {
+    width: calc(100% / 3 - 20px);
+    margin: 5px;
+  }
 }
 
 /*INFORMATION*/
 .information {
-    background-color: $primary-bg;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-        "a b"
-        "c d";
+  background-color: $primary-bg;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "a b"
+    "c d";
 
-    padding: 50px 0px;
+  padding: 50px 0px;
 
-    h2 {
-        margin: 0;
-    }
+  h2 {
+    margin: 0;
+  }
 
-    p {
-        padding: 2px 0px 0px 100px;
-    }
+  p {
+    padding: 2px 0px 0px 100px;
+  }
 }
 
 .upcoming-events {
-    grid-area: a;
+  grid-area: a;
 }
 
 .icon-flex {
-    display: flex;
-    gap: 1%;
-
+  display: flex;
+  gap: 1%;
 }
 
 .fa-stack {
-    font-size: 3rem;
-    /*fix default size, too big*/
+  font-size: 3rem;
+  /*fix default size, too big*/
 }
 
 .community {
-    grid-area: b;
+  grid-area: b;
 }
 
 .blog {
-    grid-area: c;
+  grid-area: c;
 }
 
 .get-in-touch {
-    grid-area: d;
+  grid-area: d;
 }
 
 /*ref for circle solution:
 https://markheath.net/post/font-awesome-circle-background
 */
 .icon-background {
-    color: $accent-blue;
+  color: $accent-blue;
 }
 
 i {
-    color: $primary-white;
+  color: $primary-white;
 }
 
 /*MARKET LOCATION*/
 .market-locations-bg {
-    background-color: $secondary-bg;
+  background-color: $secondary-bg;
 }
 
 .market-locations {
-    gap: 10%;
-    padding: 50px 0px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-        "left-img online-content"
-        "locations-content right-img";
+  gap: 10%;
+  padding: 50px 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "left-img online-content"
+    "locations-content right-img";
 
-    p {
-        color: $primary-white;
-    }
+  p {
+    color: $primary-white;
+  }
 
-    h3 {
-        margin: 0;
-    }
+  h3 {
+    margin: 0;
+  }
 }
 
 .online-content {
-    grid-area: online-content;
-    padding-right: 50px;
-    padding-bottom: 20px;
+  grid-area: online-content;
+  padding-right: 50px;
+  padding-bottom: 20px;
 }
 
 .locations-content {
-    grid-area: locations-content;
-    text-align: right;
-    padding-left: 50px;
-    padding-bottom: 50px;
+  grid-area: locations-content;
+  text-align: right;
+  padding-left: 50px;
+  padding-bottom: 50px;
 }
 
 .left-image {
-    grid-area: left-img;
+  grid-area: left-img;
 
-    img {
-        position: relative;
-        z-index: 1;
-        margin-top: -100px;
-        width: 100%;
-        max-height: 500px;
-        object-fit: cover;
-    }
+  img {
+    position: relative;
+    z-index: 1;
+    margin-top: -100px;
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+  }
 }
 
 .right-image {
-    grid-area: right-img;
+  grid-area: right-img;
 
-    img {
-        position: relative;
-        z-index: 1;
-        margin-bottom: -100px;
-        width: 100%;
-        max-height: 500px;
-        object-fit: cover;
-    }
+  img {
+    position: relative;
+    z-index: 1;
+    margin-bottom: -100px;
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+  }
 }
 
 /*STYLE SECTION*/
 .style {
-    display: grid;
-    grid-template-rows: repeat(2, min-content);
-    grid-template-areas:
-        "a"
-        "b";
-    text-align: center;
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-areas:
+    "a"
+    "b";
+  text-align: center;
 
-    h2 {
-        margin: 0;
-        padding-bottom: 20px;
-    }
+  h2 {
+    margin: 0;
+    padding-bottom: 20px;
+  }
 
-    p {
-        margin: 0;
-    }
+  p {
+    margin: 0;
+  }
 }
 
 .style-content {
-    grid-area: b;
-    padding: 50px 0px;
+  grid-area: b;
+  padding: 50px 0px;
 }
 
 .banner {
-    grid-area: a;
+  grid-area: a;
 
-    img {
-        width: 100%;
-        max-height: 500px;
-        object-fit: cover;
-        object-position: center;
-    }
+  img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+  }
 }
 
 /*BLOG ARTICLE*/
 article,
 aside {
-    background-color: $secondary-bg;
-    color: $primary-white;
+  background-color: $secondary-bg;
+  color: $primary-white;
 
-    h2 {
-        color: $primary-white;
-    }
+  h2 {
+    color: $primary-white;
+  }
 }
 
 .article-aside-comments {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, min-content);
-    /*stop container from being too long*/
-    grid-template-areas:
-        "article article aside"
-        "article article empty"
-        "comment comment empty"
-        "comment-form comment-form empty";
-    column-gap: 5%;
-    row-gap: 1%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, min-content);
+  /*stop container from being too long*/
+  grid-template-areas:
+    "article article aside"
+    "article article empty"
+    "comment comment empty"
+    "comment-form comment-form empty";
+  column-gap: 5%;
+  row-gap: 1%;
 
-    h4 {
-        color: $primary-bg;
-        margin: 0;
-        margin-bottom: 5%;
-    }
+  h4 {
+    color: $primary-bg;
+    margin: 0;
+    margin-bottom: 5%;
+  }
 
-    h2 {
-        margin-top: 10%;
-        margin-bottom: 2%;
-    }
+  h2 {
+    margin-top: 10%;
+    margin-bottom: 2%;
+  }
 }
 
 article {
-    grid-area: article;
+  grid-area: article;
 
-    img {
-        position: relative;
-        z-index: 1;
-        margin-top: -10%;
-    }
+  img {
+    position: relative;
+    z-index: 1;
+    margin-top: -10%;
+  }
 }
 
 .blog-aside {
-    grid-area: aside;
-    margin-top: 100px;
-    padding: 40px 0px;
+  grid-area: aside;
+  margin-top: 100px;
+  padding: 40px 0px;
 
-    img {
-        position: relative;
-        z-index: 1;
-        margin-top: -20%;
-        padding-left: 5%;
-    }
+  img {
+    position: relative;
+    z-index: 1;
+    margin-top: -20%;
+    padding-left: 5%;
+  }
 
-    p {
-        padding: 0px 30px;
-        margin: 0;
-    }
+  p {
+    padding: 0px 30px;
+    margin: 0;
+  }
 
-    h2 {
-        margin-bottom: 0;
-        padding: 0px 30px;
-    }
+  h2 {
+    margin-bottom: 0;
+    padding: 0px 30px;
+  }
 
-    ul {
-        margin: 0;
-    }
+  ul {
+    margin: 0;
+  }
 }
 
 .comment-section {
-    grid-area: comment;
+  grid-area: comment;
 
-    h2 {
-        color: $primary-font;
-        margin-top: 5%;
-        padding-bottom: 40px;
-    }
+  h2 {
+    color: $primary-font;
+    margin-top: 5%;
+    padding-bottom: 40px;
+  }
 
-    h4 {
-        color: $primary-blue;
-        margin-bottom: 1%;
-    }
+  h4 {
+    color: $primary-blue;
+    margin-bottom: 1%;
+  }
 
-    p {
-        margin: 0;
-        text-align: left;
-    }
+  p {
+    margin: 0;
+    text-align: left;
+  }
 }
 
 .comment-content {
-    display: grid;
-    grid-template-columns: 10% 90%;
-    gap: 20px;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-        "img-a comment-a"
-        "img-b comment-b";
+  display: grid;
+  grid-template-columns: 10% 90%;
+  gap: 20px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "img-a comment-a"
+    "img-b comment-b";
 }
 
 .comment-1 {
-    grid-area: comment-a;
+  grid-area: comment-a;
 
-    img {
-        grid-area: img-a;
-    }
+  img {
+    grid-area: img-a;
+  }
 }
 
 .comment-2 {
-    grid-area: comment-b;
+  grid-area: comment-b;
 
-    img {
-        max-width: 100%;
-        align-self: center;
-        grid-area: img-b;
-    }
+  img {
+    max-width: 100%;
+    align-self: center;
+    grid-area: img-b;
+  }
 }
 
 .comment-form {
-    grid-area: comment-form;
-    margin-bottom: 10%;
+  grid-area: comment-form;
+  margin-bottom: 10%;
 }
 
 /*CONTACT SECTION*/
 .grid-wrap {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "form form contact";
-    gap: 5%;
-    margin: 5% 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "form form contact";
+  gap: 5%;
+  margin: 5% 0;
 }
 
 .aside-contact {
-    grid-area: contact;
+  grid-area: contact;
 }
 
 .aside-contact {
-    padding: 10px;
-    background: none;
-    color: $primary-font;
+  padding: 10px;
+  background: none;
+  color: $primary-font;
 
-    i {
-        color: $primary-blue;
-    }
+  i {
+    color: $primary-blue;
+  }
 
-    ul {
-        padding: 0;
-    }
+  ul {
+    padding: 0;
+  }
 
-    li {
-        display: inline-block;
-        padding-right: 20px;
-    }
+  li {
+    display: inline-block;
+    padding-right: 20px;
+  }
 }
 
 .contact-list i:hover {
-    color: $accent-blue;
+  color: $accent-blue;
 }
 
 .contact-info {
-    p {
-        margin: 0;
-    }
+  p {
+    margin: 0;
+  }
 }

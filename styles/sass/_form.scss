@@ -1,106 +1,104 @@
 /*CONTACT FORM*/
-.main-form{
-    position: relative;
-    margin-top: -30%;
-    background: none;
-    margin-left: 5%;
-    grid-area: form;
-    textarea{
-        background: transparent;
-        border: 2px solid $accent-blue;
-        width: 100%;
-        padding: 4rem;
-        color: $primary-white;
-        resize: none;
-        &:focus{
-            border: 2px dashed $accent-blue;
-        }
-    }
-    .read-more-button{
-        width: 100%;
-    }
-    fieldset{
-        border: none;
-        background-color: $secondary-bg;
-        padding: 100px;
-    }
-}
-
-.main-form ::placeholder{
-    color: $primary-white;
-    opacity: .9;
-}
-
-.main-form input[type=email],
-.main-form input[type=text]{
+.main-form {
+  position: relative;
+  margin-top: -30%;
+  background: none;
+  margin-left: 5%;
+  grid-area: form;
+  textarea {
     background: transparent;
-    border: none;
-    border-bottom: 2px solid $accent-blue;
-    margin-bottom: 40px;
-    padding: 2rem;
+    border: 2px solid $accent-blue;
+    width: 100%;
+    padding: 4rem;
     color: $primary-white;
-    &:focus{
-        border-bottom: 2px dashed $accent-blue;
+    resize: none;
+    &:focus {
+      border: 2px dashed $accent-blue;
     }
+  }
+  .read-more-button {
+    width: 100%;
+  }
+  fieldset {
+    border: none;
+    background-color: $secondary-bg;
+    padding: 100px;
+  }
 }
 
-
-
-.main-form input[type=email]{
-    width: 44%;
+.main-form ::placeholder {
+  color: $primary-white;
+  opacity: 0.9;
 }
 
-.main-form input[type=text]{
-    width: 45%;
-    margin-right: 9%;
+.main-form input[type="email"],
+.main-form input[type="text"] {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid $accent-blue;
+  margin-bottom: 40px;
+  padding: 2rem;
+  color: $primary-white;
+  &:focus {
+    border-bottom: 2px dashed $accent-blue;
+  }
+}
+
+.main-form input[type="email"] {
+  width: 44%;
+}
+
+.main-form input[type="text"] {
+  width: 45%;
+  margin-right: 9%;
 }
 
 /*COMMENT FORM*/
-.comment-form{
-    textarea{
-        background: transparent;
-        border: 2px solid $accent-blue;
-        width: 100%;
-        margin: 2% 0;
-        padding: 4rem;
-        color: $primary-blue;
-        resize: none;
-        &:focus{
-            border: 2px dashed $accent-blue;
-        }
-    }
-    fieldset{
-        border: none;
-        background-color: transparent;
-    }
-    .find-out-button{
-        width: 100%;
-    }
-}
-
-.comment-form ::placeholder{
-    color: $primary-blue;
-    opacity: 1;
-}
-
-.comment-form input[type=email],
-.comment-form input[type=text]{
+.comment-form {
+  textarea {
     background: transparent;
-    border: none;
-    border-bottom: 2px solid $accent-blue;
-    margin: 5% 0;
-    padding: 2rem;
+    border: 2px solid $accent-blue;
+    width: 100%;
+    margin: 2% 0;
+    padding: 4rem;
     color: $primary-blue;
-    &:focus{
-        border-bottom: 2px dashed $accent-blue;
+    resize: none;
+    &:focus {
+      border: 2px dashed $accent-blue;
     }
+  }
+  fieldset {
+    border: none;
+    background-color: transparent;
+  }
+  .find-out-button {
+    width: 100%;
+  }
 }
 
-.comment-form input[type=email]{
-    width: 45%;
+.comment-form ::placeholder {
+  color: $primary-blue;
+  opacity: 1;
 }
 
-.comment-form input[type=text]{
-    width: 44%;
-    margin-right: 9%;
+.comment-form input[type="email"],
+.comment-form input[type="text"] {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid $accent-blue;
+  margin: 5% 0;
+  padding: 2rem;
+  color: $primary-blue;
+  &:focus {
+    border-bottom: 2px dashed $accent-blue;
+  }
+}
+
+.comment-form input[type="email"] {
+  width: 45%;
+}
+
+.comment-form input[type="text"] {
+  width: 44%;
+  margin-right: 9%;
 }
