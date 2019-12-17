@@ -135,7 +135,11 @@ img {
     display: flex;
     justify-content: space-between;
     padding: 100px 0px;
-    column-gap: 5%;
+
+    img{
+        width: calc(100% /3 - 20px);
+        margin: 5px;
+    }
 }
 
 /*INFORMATION*/

@@ -209,6 +209,7 @@ fix h1 on cover*/
 
     .image-flex img {
         align-self: center;
+        width: 50%;
     }
 
 }
@@ -227,7 +228,9 @@ testing vscode comments*/
 
     .image-flex {
         padding: 50px 100px;
-        gap: 1%;
+        img{
+            width: 100%;
+        }
     }
 
     .index-main {
@@ -337,6 +340,10 @@ testing vscode comments*/
 
     .image-flex {
         padding: 40px 5px;
+
+        img{
+            width: 100%;
+        }
     }
 
     p {

@@ -336,8 +336,11 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 100px 0px;
-  -webkit-column-gap: 5%;
-          column-gap: 5%;
+}
+
+.image-flex img {
+  width: calc(100% /3 - 20px);
+  margin: 5px;
 }
 
 /*INFORMATION*/
@@ -1516,6 +1519,7 @@ fix h1 on cover*/
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    width: 50%;
   }
 }
 
@@ -1529,7 +1533,9 @@ testing vscode comments*/
   }
   .image-flex {
     padding: 50px 100px;
-    gap: 1%;
+  }
+  .image-flex img {
+    width: 100%;
   }
   .index-main {
     text-align: center;
@@ -1619,6 +1625,9 @@ testing vscode comments*/
   }
   .image-flex {
     padding: 40px 5px;
+  }
+  .image-flex img {
+    width: 100%;
   }
   p {
     font-size: 1.75rem;
