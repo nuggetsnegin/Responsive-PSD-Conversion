@@ -16,4 +16,4 @@ Recreated a multi-page pdf design into a responsive website utilizing Flexbox an
 
 ## Author
 
-* **Negin Melina Sauermann** - [nuggetsnegin](https://github.com/nuggetsnegin)
+* **Negi** - [nuggetsnegin](https://github.com/nuggetsnegin)
